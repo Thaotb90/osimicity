@@ -1,0 +1,165 @@
+.token {
+  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+  .title-token{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+  .title-token-metric {
+    font-size: 30px;
+    color: white;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 60px 0;
+  }
+  .token-info-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  table.table-metric {
+    border-spacing: 25px;
+    border-collapse: separate;
+  }
+  table.table-metric thead {
+    background: #77441c;
+  }
+  table.table-metric tr {
+    min-height: 45px;
+  }
+  table.table-metric thead th {
+    color: white;
+    padding: 10px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: center;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(180deg, #faea75, #c07205);
+    border-width: 2px;
+    border-style: solid;
+  }
+  .token-info-content tbody tr {
+    height: 45px;
+  }
+  .token-info-content tbody tr td {
+    padding: 0 30px;
+  }
+  .token-info-content tr td:not(last-child) {
+    text-align: center;
+  }
+  .token-info-content tbody tr td {
+    font-family: "AquireRegular";
+    padding: 10px 30px;
+    color: white;
+    background-color: #171718;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 10px;
+  
+  }
+  .token-info-content tfoot tr {
+    background: #1D1D1E;
+
+  }
+  .table-metric tfoot tr th:not(last-child) {
+    text-align: center;
+  }
+  .token-info-content tfoot tr th {
+    padding: 15px 0;
+    color: white;
+    border-radius: 10px;
+  }
+}
+
+.token-table {
+  padding: 50px;
+  background: #232323;
+  border-radius: 25px;
+  box-shadow: 0 0 72px -15px $primary-color;
+}
+
+
+@media screen and (max-width: 991px) {
+  .token{
+    .col-lg-6:first-child {
+      margin-bottom: 50px;
+    }
+  }
+.token .chart-box{
+  max-width: 600px;
+  margin: auto;
+}
+}
+@media screen and (max-width: 769px) {
+  .token .token-info-content {
+    flex-direction: column;
+    column-gap: 30px;
+    .table-metric {
+      margin-bottom: 40px;
+    }
+    .token-intruction {
+      margin: auto;
+  }
+  
+}
+
+}
+@media screen and (max-width: 580px) {
+  .token table.table-metric thead th {
+    padding: 5px;
+    font-size: 16px;
+}
+.token .token-info-content tbody tr td {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.token .token-info-content tfoot tr th {
+  padding: 15px 0;
+  color: white;
+  font-size: 14px;
+}
+.token .intruction-item span {
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 374px) {
+  .token table.table-metric thead th {
+    font-size: 12px;
+}
+}
+@media screen and (max-width: 320px) {
+  .token .token-info-content tbody tr td {
+    padding: 0px;
+    font-size: 10px;
+    font-weight: 300;
+}
+.token .token-info-content tfoot tr th {
+  padding: 15px 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+.token .intruction-item h5 {
+  padding: 12px 0px;
+  width: 120px;
+  font-size: 14px;
+  font-weight: 300;
+}
+}
+
