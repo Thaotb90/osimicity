@@ -84,7 +84,9 @@ $('.character-list').slick({
     dots: false,
     arrows:true,
     infinite: true,
-    autoPlay: true,
+    autopay: true,
+    autoplaySpeed: 1000,
+    pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/images/character/chevron-back-outline.svg'>",
@@ -117,3 +119,7 @@ $('.team-slider').slick({
     ]
   });
  
+  // Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})

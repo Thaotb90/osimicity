@@ -128,12 +128,10 @@ header .nav-right {
   justify-content: center;
 }
 #navbarSupportedContent {
-  transition: 0.4s ease-in-out;
   display: none;
 }
 #navbarSupportedContent.show {
   display: block;
-  transition: 0.4s ease-in-out;
   margin-top: 12px;
 }
 .header .nav-right {
@@ -197,7 +195,13 @@ header .nav-right {
     background: transparent;
     padding: 10px 0px;
   }
-
+  .header nav.change-height {
+    padding:15px 0;
+    }
+    #navbarSupportedContent.show {
+      display: block;
+      margin-top: 15px;
+  }
   .nav-right {
     display: none !important;
   }
