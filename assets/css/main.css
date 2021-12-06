@@ -2963,17 +2963,21 @@ footer.footer ul {
   text-align: left;
 }
 footer.footer ul li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 footer.footer ul li a {
   transition: 0.2s all;
   font-family: "AquireRegular";
+  display: block;
 }
 footer.footer ul li a:hover {
   color: #E5650E;
 }
 footer.footer .footer-item {
   text-align: left;
+}
+footer.footer .menu-socials .menu-item {
+  position: relative;
 }
 footer.footer .menu-socials i {
   margin-right: 10px;
@@ -3134,6 +3138,29 @@ footer .overlay-footer span.middle-right {
   border-right: 2px solid #ffffffd4;
   top: 143px;
   z-index: -1;
+}
+
+.footer .menu-socials li.menu-item.group-telegram:hover .menu-tele-group {
+  display: block;
+}
+.footer .menu-socials .menu-tele-group {
+  background-color: rgba(0, 0, 0, 0.795);
+  right: -30px;
+  top: -380%;
+  max-width: 100px;
+}
+.footer .menu-socials .menu-tele-group .menu-tele .menu-item {
+  padding: 0 10px;
+}
+.footer .menu-socials .menu-tele-group .menu-tele .menu-item img {
+  max-width: 30px;
+  margin-right: 8px;
+}
+.footer .menu-socials .menu-tele-group .menu-tele .menu-item span {
+  text-transform: capitalize;
+  color: white;
+  font-size: 12px;
+  font-family: "Oxanium", cursive;
 }
 
 @media screen and (max-width: 1440px) {
