@@ -1,39 +1,50 @@
-.metric{
-    background-image: url(../images/bg-section/bg-section-metric.jpg);
-    background-repeat:repeat-x;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 80px;
+.metric {
+  background-image: url(../images/bg-section/bg-section-metric.jpg);
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 80px;
 }
 .token .token-info-content tbody tr td:hover {
   background-color: lightgray;
   color: black;
 }
-#token .section-heading{
-    margin-bottom: 140px;
+#token .section-heading {
+  margin-bottom: 140px;
 }
 @media screen and (max-width: 991px) {
-    .metric{
-        background-repeat:inherit;
-        background-size: inherit;
-        background-position: center;
-        padding: 0;
-    }
-    .token-table {
-        padding: 10px;
-    }
-    .token .token-info-content tbody tr td {
-        padding: 10px;
-
-}
-.token table.table-metric {
+  .metric {
+    background-repeat: inherit;
+    background-size: inherit;
+    background-position: center;
+    padding: 0;
+  }
+  .token-table {
+    padding: 10px;
+  }
+  .token .token-info-content tbody tr td {
+    padding: 10px;
+  }
+  .token table.table-metric {
     border-spacing: 15px;
     border-collapse: separate;
   }
 }
 #token .section-heading {
-    margin-bottom: 85px;
+  margin-bottom: 85px;
 }
+@media screen and (max-width: 480px) {
+  .token table.table-metric {
+    border-spacing: 5px;
+  }
+  .token table.table-metric thead th {
+    font-size: 12px;
+  }
+  .token .token-info-content tbody tr td {
+    padding: 5px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .token .token-info-content tbody tr td {
     padding: 5px;
@@ -49,6 +60,15 @@
     font-size: 12px;
   }
   section#roadmap {
-    padding-top: 0;
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .token .token-info-content tbody tr td {
+    padding: 0;
+    font-size: 8px;
+  }
+  .token-table {
+    padding: 0px;
   }
 }

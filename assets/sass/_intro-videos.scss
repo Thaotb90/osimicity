@@ -10,7 +10,7 @@
       position: relative;
       padding-bottom: 30px;
       margin-bottom: 40px;
-      .text-border{
+      .text-border {
         font-size: 100px;
         color: black;
         -webkit-text-stroke-width: 2px;
@@ -20,9 +20,14 @@
       letter-spacing: 0px;
       color: $primary-color;
     }
-    .section-title:after{
-      content: '\00a0';
-      background-image: radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 50%, transparent 75%);
+    .section-title:after {
+      content: "\00a0";
+      background-image: radial-gradient(
+        at 50% 50%,
+        rgba(255, 255, 255, 0.7) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 75%
+      );
       background-size: 100% 5px;
       background-repeat: no-repeat;
       width: 100%;
@@ -135,7 +140,7 @@
   .video-right:hover::before {
     opacity: 1;
   }
-  .video-right:hover .bg-video{
+  .video-right:hover .bg-video {
     transform: scale(1.04);
   }
   .section-heading {
@@ -244,5 +249,15 @@
   }
   .intro-videos .section-heading .section-title {
     font-size: 38px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .class-character .character-list .list-item .boxed-content .title-character {
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .class-character .character-list .list-item .boxed-content .desc-character {
+    font-size: 12px;
   }
 }
