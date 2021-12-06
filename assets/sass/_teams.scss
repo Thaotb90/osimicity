@@ -1,4 +1,5 @@
 .teams {
+<<<<<<< HEAD
   background-image: url(../images/bg-section/bg-section-teams.jpg);
   background-repeat:repeat-x;
   background-size: cover;
@@ -7,33 +8,42 @@
   .team-slider{
     
     .team{
+=======
+  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 60px 0;
+  .team-slider {
+    .team {
+>>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
       background: #000000;
       padding: 30px 0;
       box-shadow: 0 0 30px -10px $primary-color;
       margin: 30px;
-      .boxed-img{
+      .boxed-img {
         width: 200px;
         height: 200px;
         border-radius: 100rem;
         margin-bottom: 30px;
         transition: 0.3s all;
-        img{
+        img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
-      .info-team{
+      .info-team {
         padding: 20px 30px;
-        .content-top{
+        .content-top {
           margin-bottom: 30px;
-          .name{
+          .name {
             font-size: 24px;
             font-family: "AquireBold";
             text-transform: uppercase;
             margin-bottom: 0;
           }
-          .text-white{
+          .text-white {
             color: white;
             font-family: "AquireRegular";
             font-size: 16px;
@@ -50,17 +60,17 @@
   border-radius: 0 10px 10px 0;
 }
 .teams .team-slider img.a-right.control-c.next.slick-next.slick-arrow {
-right: 30px;
-border-radius: 10px 0 0 10px;
+  right: 30px;
+  border-radius: 10px 0 0 10px;
 }
-.teams .team:hover .boxed-img{
+.teams .team:hover .boxed-img {
   transform: rotateY(180deg);
   filter: drop-shadow(0 0 20px $primary-color);
 }
 @media screen and (max-width: 1279px) {
   .teams {
     padding-top: 80px;
-}
+  }
 }
 @media screen and (max-width: 991px) {
 .teams{
@@ -74,7 +84,7 @@ border-radius: 10px 0 0 10px;
 @media screen and (max-width: 768px) {
   .teams {
     padding: 70px 0 40px 0;
-}
+  }
 }
 @media screen and (max-width: 375px) {
   .teams .team-slider .team .boxed-img {
@@ -82,19 +92,19 @@ border-radius: 10px 0 0 10px;
     height: 160px;
     border-radius: 100rem;
     margin-bottom: 0px;
-}
-.teams .team-slider .team .info-team .content-top {
-  margin-bottom: 20px;
-  .name{
-    font-size: 18px;
   }
-  .text-white{
-    font-size: 16px;
+  .teams .team-slider .team .info-team .content-top {
+    margin-bottom: 20px;
+    .name {
+      font-size: 18px;
+    }
+    .text-white {
+      font-size: 16px;
+    }
   }
-}
-.teams .team-slider .team .info-team .content-bottom {
-  p{
-    font-size: 12px;
+  .teams .team-slider .team .info-team .content-bottom {
+    p {
+      font-size: 12px;
+    }
   }
-}
 }

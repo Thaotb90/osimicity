@@ -1,14 +1,20 @@
 .intro-videos {
   background-image: url(../images/bg-section/osimi-bg-normal.jpg);
+  background-repeat: repeat;
+  background-size: contain;
   position: relative;
   z-index: 1;
-  .section-heading{
-    .section-title{
+  .section-heading {
+    .section-title {
       line-height: 1;
+<<<<<<< HEAD
       position: relative;
       padding-bottom: 30px;
       margin-bottom: 40px;
       .text-border{
+=======
+      .text-border {
+>>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
         font-size: 100px;
         color: black;
         -webkit-text-stroke-width: 2px;
@@ -94,7 +100,7 @@
         }
       }
       #play:hover i {
-        color:lightgrey;
+        color: lightgrey;
       }
       .play-show {
         cursor: pointer;
@@ -117,8 +123,8 @@
       }
     }
   }
-  
-  .video-right:before{
+
+  .video-right:before {
     content: "";
     position: absolute;
     top: 0;
@@ -130,14 +136,19 @@
     opacity: 0;
     transition: 0.3s all;
   }
-  .video-right:hover::before{
+  .video-right:hover::before {
     opacity: 1;
   }
+<<<<<<< HEAD
   .video-right:hover .bg-video{
     transform: scale(1.04);
+=======
+  .video-right:hover .bg-video {
+    transform: scale(1.1);
+>>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
   }
   .section-heading {
-    h3{
+    h3 {
       box-shadow: none;
     }
     .section-title {
@@ -159,92 +170,88 @@
   position: relative;
   z-index: 3;
 }
-.intro-videos .content-intro{
+.intro-videos .content-intro {
   padding: 0 25px;
-  p{
+  p {
     text-align: center;
   }
 }
 @media screen and (max-width: 1440px) {
   .intro-videos .section-heading .section-title .text-border {
-font-size: 80px;
-}
+    font-size: 80px;
+  }
 }
 @media screen and (max-width: 1280px) {
   .intro-videos .section-heading .section-title .text-border {
     font-size: 70px;
-}
-.intro-videos .section-heading .section-title {
-  font-size: 70px;
-}
+  }
+  .intro-videos .section-heading .section-title {
+    font-size: 70px;
+  }
 }
 @media screen and (max-width: 1023px) {
-
   .intro-videos .section-heading .section-title {
     font-size: 60px;
   }
   .intro-videos .section-heading .boxed-img {
     margin-bottom: 30px;
-}
-.intro-videos .section-heading {
-  margin-bottom: 0px;
-}
-
+  }
+  .intro-videos .section-heading {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-
 }
 
 @media screen and (max-width: 991px) {
-  .intro-videos{
+  .intro-videos {
     padding-top: 0;
   }
   .intro-videos .section-heading {
     margin-bottom: 60px;
   }
-.intro-videos .col-lg-6:first-child{
-  margin-bottom: 50px;
-}
-.intro-videos .video-right {
-  max-width: 650px;
-  margin: auto;
-}
+  .intro-videos .col-lg-6:first-child {
+    margin-bottom: 50px;
+  }
+  .intro-videos .video-right {
+    max-width: 650px;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 580px) {
   .intro-videos .section-heading .section-title .text-border {
     font-size: 55px;
-}
-.intro-videos .section-heading .btn {
-font-size: 18px;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
-}
+  }
+  .intro-videos .section-heading .btn {
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+  }
 }
 @media screen and (max-width: 480px) {
-.intro-videos .section-heading .section-title {
-  font-size: 45px;
-}
-.intro-videos .section-heading .section-title .text-border {
-  font-size: 45px;
-}
+  .intro-videos .section-heading .section-title {
+    font-size: 45px;
+  }
+  .intro-videos .section-heading .section-title .text-border {
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width: 374px) {
-.intro-videos .section-heading .btn {
-  margin-top: 25px;
-}
-.btn-outline-primary {
-
-  width: 185px;
-  height: 50px;
-  line-height: 50px;
-}
-.intro-videos .section-heading .section-title .text-border {
-  font-size: 38px;
-}
-.intro-videos .section-heading .section-title {
-  font-size: 38px;
-}
+  .intro-videos .section-heading .btn {
+    margin-top: 25px;
+  }
+  .btn-outline-primary {
+    width: 185px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .intro-videos .section-heading .section-title .text-border {
+    font-size: 38px;
+  }
+  .intro-videos .section-heading .section-title {
+    font-size: 38px;
+  }
 }

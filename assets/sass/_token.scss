@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 .token#token{
   background-image: url(../images/bg-section/bg-section-allocation.jpg);
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
+=======
+.token {
+  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+
+>>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
   position: relative;
   z-index: 1;
   padding-top: 60px;
@@ -13,7 +22,7 @@
     position: relative;
     z-index: 3;
   }
-  .title-token{
+  .title-token {
     font-size: 20px;
     text-transform: uppercase;
     color: $primary-color;
@@ -72,11 +81,9 @@
     font-size: 14px;
     text-transform: uppercase;
     border-radius: 10px;
-  
   }
   .token-info-content tfoot tr {
-    background: #1D1D1E;
-
+    background: #1d1d1e;
   }
   .table-metric tfoot tr th:not(last-child) {
     text-align: center;
@@ -95,8 +102,8 @@
   box-shadow: 0 0 72px -15px $primary-color;
 }
 
-
 @media screen and (max-width: 991px) {
+<<<<<<< HEAD
   .token#token{
     background-repeat: inherit;
     background-position: center;
@@ -104,14 +111,17 @@
     padding-top: 40px;
   }
   .token{
+=======
+  .token {
+>>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
     .col-lg-6:first-child {
       margin-bottom: 50px;
     }
   }
-.token .chart-box{
-  max-width: 600px;
-  margin: auto;
-}
+  .token .chart-box {
+    max-width: 600px;
+    margin: auto;
+  }
 }
 @media screen and (max-width: 769px) {
   .token .token-info-content {
@@ -122,52 +132,49 @@
     }
     .token-intruction {
       margin: auto;
+    }
   }
-  
-}
-
 }
 @media screen and (max-width: 580px) {
   .token table.table-metric thead th {
     padding: 5px;
     font-size: 16px;
-}
-.token .token-info-content tbody tr td {
-  padding: 10px;
-  font-size: 12px;
-  font-weight: 300;
-}
-.token .token-info-content tfoot tr th {
-  padding: 15px 0;
-  color: white;
-  font-size: 14px;
-}
-.token .intruction-item span {
-  font-size: 16px;
-}
+  }
+  .token .token-info-content tbody tr td {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .token .token-info-content tfoot tr th {
+    padding: 15px 0;
+    color: white;
+    font-size: 14px;
+  }
+  .token .intruction-item span {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 374px) {
   .token table.table-metric thead th {
     font-size: 12px;
-}
+  }
 }
 @media screen and (max-width: 320px) {
   .token .token-info-content tbody tr td {
     padding: 0px;
     font-size: 10px;
     font-weight: 300;
+  }
+  .token .token-info-content tfoot tr th {
+    padding: 15px 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .token .intruction-item h5 {
+    padding: 12px 0px;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 300;
+  }
 }
-.token .token-info-content tfoot tr th {
-  padding: 15px 0;
-  color: white;
-  font-size: 12px;
-  font-weight: 500;
-}
-.token .intruction-item h5 {
-  padding: 12px 0px;
-  width: 120px;
-  font-size: 14px;
-  font-weight: 300;
-}
-}
-
