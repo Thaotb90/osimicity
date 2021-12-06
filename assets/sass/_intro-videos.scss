@@ -7,14 +7,10 @@
   .section-heading {
     .section-title {
       line-height: 1;
-<<<<<<< HEAD
       position: relative;
       padding-bottom: 30px;
       margin-bottom: 40px;
       .text-border{
-=======
-      .text-border {
->>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
         font-size: 100px;
         color: black;
         -webkit-text-stroke-width: 2px;
@@ -139,13 +135,8 @@
   .video-right:hover::before {
     opacity: 1;
   }
-<<<<<<< HEAD
   .video-right:hover .bg-video{
     transform: scale(1.04);
-=======
-  .video-right:hover .bg-video {
-    transform: scale(1.1);
->>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
   }
   .section-heading {
     h3 {

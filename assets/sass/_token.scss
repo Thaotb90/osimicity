@@ -1,17 +1,8 @@
-<<<<<<< HEAD
 .token#token{
   background-image: url(../images/bg-section/bg-section-allocation.jpg);
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
-=======
-.token {
-  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat;
-  background-position: center;
-  background-size: contain;
-
->>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
   position: relative;
   z-index: 1;
   padding-top: 60px;
@@ -103,7 +94,6 @@
 }
 
 @media screen and (max-width: 991px) {
-<<<<<<< HEAD
   .token#token{
     background-repeat: inherit;
     background-position: center;
@@ -111,9 +101,6 @@
     padding-top: 40px;
   }
   .token{
-=======
-  .token {
->>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
     .col-lg-6:first-child {
       margin-bottom: 50px;
     }

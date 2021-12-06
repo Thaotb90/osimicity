@@ -1,11 +1,7 @@
 .roadmap {
   background-image: url(../images/bg-section/bg-section-roadmap.jpg);
   position: relative;
-<<<<<<< HEAD
   background-position: center;
-=======
-  background-position: top;
->>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
   z-index: 1;
   padding-bottom: 600px;
   background-repeat: repeat-x;
@@ -96,7 +92,6 @@
 }
 @media screen and (max-width: 991px) {
   .roadmap {
-<<<<<<< HEAD
     padding-bottom: 320px;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,11 +99,6 @@
     padding-top: 60px;
 }
   .chart-roadmap  {
-=======
-    padding-bottom: 200px;
-  }
-  .chart-roadmap {
->>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
     display: none;
   }
   .flex-row-one {
@@ -126,7 +116,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-<<<<<<< HEAD
 }
 .roadmap .section-heading {
   margin-bottom: 40px;
@@ -135,13 +124,6 @@
   margin: 0 !important;
   text-align: center;
 }
-=======
-  }
-  .roadmap .content-rm .flex-row-two .flex-item {
-    margin: 0 !important;
-    text-align: center;
-  }
->>>>>>> 9f830544efea492352ef9e17d9159203b43c4ce4
 }
 @media screen and (max-width: 480px) {
   .roadmap {
