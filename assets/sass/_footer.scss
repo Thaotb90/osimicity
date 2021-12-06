@@ -1,299 +1,308 @@
-footer.footer{
-    padding:75px 0;
-    background-image: url(../images/bg-section/bg-footer.jpg);
-    background-position: left;
-    background-size: auto;
-    background-repeat:repeat;
-    position: relative;
-    z-index: 1;
-    .footer-brand{
-    
-        .boxed-img{
-            margin-bottom: 20px;
-            img{
-
-            }
-        }
+footer.footer {
+  padding: 75px 0;
+  background-image: url(../images/bg-section/bg-footer.jpg);
+  background-position: left;
+  background-size: auto;
+  background-repeat: repeat;
+  position: relative;
+  z-index: 1;
+  .footer-brand {
+    .boxed-img {
+      margin-bottom: 20px;
+      img {
+      }
     }
-    .block-footer-info{
-        .info-company{
-            text-align: left;
-            p{
-                margin-bottom: 5px;
-                font-size: 14px;
-            }
-        }
+  }
+  .block-footer-info {
+    .info-company {
+      text-align: left;
+      p {
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
     }
-    .title-list-footer{
-        color: $primary-color;
-        font-size: 22px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-    ul {
-        padding: 0;
-        text-align: left;
-        li { 
-            margin-bottom: 5px;
-            a{
-                transition: 0.2s all;
+  }
+  .title-list-footer {
+    color: $primary-color;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  ul {
+    padding: 0;
+    text-align: left;
+    li {
+      margin-bottom: 5px;
+      a {
+        transition: 0.2s all;
         font-family: "AquireRegular";
         display: block;
-        }
-        a:hover{
-            color: $primary-color;
-        }
+      }
+      a:hover {
+        color: $primary-color;
+      }
     }
+  }
+  .footer-item {
+    text-align: left;
+  }
+  .menu-socials {
+    .menu-item {
+      position: relative;
     }
-    .footer-item{
-        text-align: left;
+    i {
+      margin-right: 10px;
     }
-    .menu-socials{
-        .menu-item {
-            position: relative;
-        }
-        i{
-            margin-right: 10px;
-        }
-    }
+  }
 }
-.footer .container{
-    position: relative;
-    z-index: 20;
+footer.footer:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+.footer .container {
+  position: relative;
+  z-index: 20;
 }
 .scroll-up {
-    position: fixed;
-    right: 0px;
-    bottom: 60px;
-    z-index: 999;
+  position: fixed;
+  right: 0px;
+  bottom: 60px;
+  z-index: 999;
 }
 .scroll-up a.page-scroll {
-    padding: 10px 20px;
-    background: #000;
-    color:white;
-    transition: 0.3s ease;
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  transition: 0.3s ease;
 }
 .scroll-up a.page-scroll:hover {
-    box-shadow: 0 0 5px #ffffff94;
+  box-shadow: 0 0 5px #ffffff94;
 }
-.footer .glass-img{
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    top: 0;
-    left: 0;
-    z-index: 11;
+.footer .glass-img {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  z-index: 11;
 }
-.footer .glass-img:before{
-    content:"";
-    position: absolute;
-    width: 100%;
-    height:70%;
-    top: 70%;
-    left: 0;
-    background-image: url(../images/bg-section/glass-left.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 100;
+.footer .glass-img:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 70%;
+  left: 0;
+  background-image: url(../images/bg-section/glass-left.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 100;
 }
-.footer .glass-img::after{
-    content:"";
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background-image: url(../images/bg-section/glass-right.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 110;
+.footer .glass-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-image: url(../images/bg-section/glass-right.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 110;
 }
 .block-footer-info {
-    max-width: 500px;
-    margin: auto;
+  max-width: 500px;
+  margin: auto;
 }
 footer .overlay-footer {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  .top-left {
     position: absolute;
-    z-index: 10;
-    width: 100%;
+    width: 150px;
     height: 100%;
     top: 0;
     left: 0;
-    .top-left{
-        position: absolute;
-        width: 150px;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-image: url(../images/overlay/top-left.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        z-index: 101;
-    }
-    .bottom-left{
-        position: absolute;
-        width: 150px;
-        height: 100%;
-        bottom: 0;
-        left: 0;
-        background-image: url(../images/overlay/bottom-left.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom;
-        z-index: 101;
-    }
-    .bottom-right{
-        position: absolute;
-        width: 150px;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-        background-image: url(../images/overlay/bottom-right.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom;
-        z-index: 101;
-    }
-    .top-right{
-        position: absolute;
-        width: 150px;
-        height: 100%;
-        top: 0;
-        right: 0;
-        background-image: url(../images/overlay/top-right.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        z-index: 101;
-    }
-    span.middle-top {
-        position: absolute;
-        width: 96%;
-        top: 0;
-        height: 100%;
-        border-top: 3px solid #ffffffd4;
-        left: 38px;
-        z-index: -1;
-    }
-    span.middle-bottom {
-        position: absolute;
-        width: 97%;
-        bottom: 0;
-        height: 100%;
-        border-bottom: 3px solid #ffffffd4;
-        left: 25px;
-        z-index: -1;
-    }
-    span.middle-left {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        height: 63%;
-        border-left: 3px solid #ffffffd4;
-        top: 134px;
-        z-index: -1;
-    }
-    span.middle-right {
-        position: absolute;
-        width: 100%;
-        right: 0;
-        height: 60%;
-        border-right: 2px solid #ffffffd4;
-        top: 143px;
-        z-index: -1;
-    }
+    background-image: url(../images/overlay/top-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 101;
+  }
+  .bottom-left {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/overlay/bottom-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    z-index: 101;
+  }
+  .bottom-right {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/overlay/bottom-right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    z-index: 101;
+  }
+  .top-right {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url(../images/overlay/top-right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 101;
+  }
+  span.middle-top {
+    position: absolute;
+    width: 96%;
+    top: 0;
+    height: 100%;
+    border-top: 3px solid #ffffffd4;
+    left: 38px;
+    z-index: -1;
+  }
+  span.middle-bottom {
+    position: absolute;
+    width: 97%;
+    bottom: 0;
+    height: 100%;
+    border-bottom: 3px solid #ffffffd4;
+    left: 25px;
+    z-index: -1;
+  }
+  span.middle-left {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 63%;
+    border-left: 3px solid #ffffffd4;
+    top: 134px;
+    z-index: -1;
+  }
+  span.middle-right {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    height: 60%;
+    border-right: 2px solid #ffffffd4;
+    top: 143px;
+    z-index: -1;
+  }
 }
 .footer .menu-socials {
-    li.menu-item.group-telegram:hover .menu-tele-group {
-        display: block;
-    }
-    .menu-tele-group {
-        background-color: rgba(0, 0, 0, 0.795);
-        right: -30px;
-        top: -380%;
-        max-width: 100px;
-        .menu-tele{
-            .menu-item {
-                padding:0 10px;
-                img {
-                    max-width: 30px;
-                    margin-right: 8px;
-                }
-                span{
-                    text-transform: capitalize;
-                    color: white;
-                    font-size: 12px;
-                    font-family: "Oxanium", cursive;
-                }
-            }
+  li.menu-item.group-telegram:hover .menu-tele-group {
+    display: block;
+  }
+  .menu-tele-group {
+    background-color: rgba(0, 0, 0, 0.795);
+    right: -30px;
+    top: -380%;
+    max-width: 100px;
+    .menu-tele {
+      .menu-item {
+        padding: 0 10px;
+        img {
+          max-width: 30px;
+          margin-right: 8px;
         }
+        span {
+          text-transform: capitalize;
+          color: white;
+          font-size: 12px;
+          font-family: "Oxanium", cursive;
+        }
+      }
     }
+  }
 }
 @media screen and (max-width: 1440px) {
-    .footer .glass-img:before, .footer .glass-img:after {
-        height: 65%;
-        max-width: 170px;
-    }
+  .footer .glass-img:before,
+  .footer .glass-img:after {
+    height: 65%;
+    max-width: 170px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    footer .overlay-footer {
-        display: none;
-    }
-    footer{
-        border-image-slice: 1;
-        border-image-source: linear-gradient(180deg, #9000f84f, #e5640ea8);
-        border-width: 8px;
-        border-style: solid;
-    }
+  footer .overlay-footer {
+    display: none;
+  }
+  footer {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(180deg, #9000f84f, #e5640ea8);
+    border-width: 8px;
+    border-style: solid;
+  }
 }
 @media screen and (max-width: 1025px) {
-    footer.footer .block-large-footer {
-        gap: 20px;
-        padding: 20px;
-    }
-    footer.footer .block-large-footer .footer-slogan {
-        font-size: 22px;
-        line-height: 27px;
-    }
+  footer.footer .block-large-footer {
+    gap: 20px;
+    padding: 20px;
+  }
+  footer.footer .block-large-footer .footer-slogan {
+    font-size: 22px;
+    line-height: 27px;
+  }
 }
 @media screen and (max-width: 991px) {
-    footer.footer ul {
-        text-align: center;
-    }
-    footer.footer .title-list-footer {
-        text-align: center;
-    }
+  footer.footer ul {
+    text-align: center;
+  }
+  footer.footer .title-list-footer {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 769px) {
-    footer.footer .block-large-footer {
-        padding: 15px;
-    }
-footer.footer .block-footer-info {
+  footer.footer .block-large-footer {
+    padding: 15px;
+  }
+  footer.footer .block-footer-info {
     .footer-slogan {
-        font-size: 18px;
-        line-height: 22px;
+      font-size: 18px;
+      line-height: 22px;
     }
     .info-company {
-        p{
-            font-size: 14px;
-        }
+      p {
+        font-size: 14px;
+      }
     }
-}
-footer.footer .footer-item .title-list-footer {
+  }
+  footer.footer .footer-item .title-list-footer {
     margin-bottom: 15px;
-}
+  }
 }
 @media screen and (max-width: 680px) {
-    footer.footer{
-        padding: 60px 0;
-    }
-    footer.footer .block-large-footer {
-        display: block;
+  footer.footer {
+    padding: 60px 0;
+  }
+  footer.footer .block-large-footer {
+    display: block;
     position: relative;
     width: 100%;
     height: auto;
@@ -305,7 +314,5 @@ footer.footer .footer-item .title-list-footer {
     transform: unset;
     padding: 15px;
     margin-bottom: 30px;
-    }
-
+  }
 }
-
