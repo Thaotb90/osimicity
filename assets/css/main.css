@@ -2402,7 +2402,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
-  padding: 0;
+  padding-bottom: 80px;
 }
 
 .token .token-info-content tbody tr td:hover {
