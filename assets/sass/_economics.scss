@@ -1,9 +1,9 @@
 .economics{
-    background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-    background-size: auto;
+    background-image: url(../images/bg-section/bg-section-economic.jpg);
+    background-size: cover;
     background-position: center;
-    padding: 60px 0;
-    background-repeat: repeat;
+    padding-top: 60px;
+    background-repeat: repeat-x;
     .grid-box{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -49,6 +49,12 @@
 }
 
 @media screen and (max-width: 991px) {
+    .economics{
+        background-size: inherit;
+        background-position: center;
+        padding-top: 40px;
+        background-repeat: inherit;
+    }
     
 .economics .grid-box {
     grid-gap:25px ;

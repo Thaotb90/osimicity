@@ -112,7 +112,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     background: black;
 }
 .class-character .character-list .list-item .boxed-content .title-character:hover{
-    box-shadow: 0 0 10px red;
+    box-shadow: 0 0 30px red;
 }
 @media screen and (max-width: 1440px) {
     .class-character .character-list .list-item .boxed-content .title-character {
@@ -134,6 +134,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
       }
       .class-character .character-list .list-item .boxed-content .title-character {
         font-size: 40px;
+        padding: 12px 10px;
     }
     .boxed-content .btn-second-small{
         margin: 25px 0;
@@ -149,9 +150,17 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     }
 
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
     .class-character .character-list .list-item .boxed-content .title-character {
         font-size: 35px;
+        padding: 12px 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .class-character .character-list .list-item .boxed-content .title-character {
+        font-size: 30px;
+        padding: 12px 10px;
     }
     .class-character .character-list .list-item .boxed-content {
         left: 70px;
@@ -190,9 +199,11 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 @media screen and (max-width: 580px) {
     .class-character .character-list .list-item .boxed-content {
         left: 45px;
+
     }
     .class-character .character-list .list-item .boxed-content .title-character {
         font-size: 26px;
+        padding: 12px 10px;
     }
     .class-character .character-list .list-item .boxed-content .desc-character {
         font-size: 14px;
@@ -200,10 +211,19 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 @media screen and (max-width: 480px) {
     .class-character .character-list .list-item .boxed-content {
-        left: 25px;
+        left: 50px;
+
     }
     .class-character .character-list .list-item .boxed-content .title-character {
         font-size: 22px;
+        padding: 12px 10px;
+    }
+}
+@media screen and (max-width: 375px) {
+
+    .class-character .character-list .list-item .boxed-content .title-character {
+        font-size: 16px;
+        padding: 10px;
     }
 }
 @media screen and (max-width: 320px) {

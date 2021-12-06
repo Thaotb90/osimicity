@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -118,10 +119,6 @@ input:focus {
 
 .wrapper {
   width: 100%;
-}
-
-section {
-  padding: 60px 0;
 }
 
 section {
@@ -270,9 +267,11 @@ img {
   background: transparent;
   margin: 60px 0;
   border-radius: 0;
-  border: 2px solid #E5650E;
+  border: 2px solid;
   position: relative;
   transition: 0.3s all;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(99deg, #fdbe04, #ff4137);
 }
 
 .btn-second-small:before {
@@ -357,10 +356,6 @@ img {
   }
 }
 @media screen and (max-width: 769px) {
-  section {
-    padding: 60px 0;
-  }
-
   .section-heading .section-title {
     font-size: 35px;
   }
@@ -924,9 +919,6 @@ img {
 .header-main-inner .navbar-nav .nav-item:hover .nav-link {
   color: black;
 }
-.header .navbar {
-  box-shadow: 3px 6px 10px rgba(127, 127, 127, 0.5);
-}
 .header #navbarSupportedContent {
   height: 100%;
   width: 100%;
@@ -955,6 +947,18 @@ span.navbar-toggler-icon {
   filter: invert(1);
 }
 
+.navbar:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: radial-gradient(at 50% 0, #ffffff85, transparent 50%);
+  background-size: 100% 6px;
+  background-repeat: no-repeat;
+  top: 100%;
+  height: 5px;
+}
+
 nav.fixed-top {
   background: #000;
   box-shadow: 3.5px 6.1px 30px rgba(0, 0, 0, 0.75);
@@ -965,29 +969,6 @@ header .nav-right {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-header .nav-right .lang-flag {
-  position: relative;
-}
-header .nav-right .lang-flag a img {
-  width: 30px;
-  height: auto;
-  object-fit: contain;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-header .nav-right .lang-flag ul.dropdown-flag {
-  display: inline-block;
-  padding: 10px;
-  border: 1px solid;
-  background-color: black;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 #navbarSupportedContent {
@@ -1007,11 +988,23 @@ header .nav-right .lang-flag ul.dropdown-flag {
   align-items: center;
   gap: 20px;
 }
+.header .nav-right .btn--playnow {
+  transition: 0.3s all;
+}
+.header .nav-right .btn--playnow img {
+  transition: 0.3s all;
+}
+.header .nav-right .btn--playnow:hover img {
+  filter: hue-rotate(193deg);
+}
 .header .nav-right .switch-lang {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+.header .nav-right .switch-lang .boxed-img {
+  margin-bottom: 0;
 }
 .header .nav-right .switch-lang .boxed-img img {
   max-width: 60px;
@@ -1088,8 +1081,9 @@ header .nav-right .lang-flag ul.dropdown-flag {
 .intro {
   padding: 0;
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh + 100px);
   background-image: url(../images/bg-section/osimi-bg-section-hero.jpg);
+  background-position: bottom;
 }
 .intro .bg-overlay {
   position: absolute;
@@ -1284,6 +1278,9 @@ header .nav-right .lang-flag ul.dropdown-flag {
 }
 .intro-videos .section-heading .section-title {
   line-height: 1;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 80px;
   letter-spacing: 0px;
   color: #E5650E;
@@ -1293,6 +1290,16 @@ header .nav-right .lang-flag ul.dropdown-flag {
   color: black;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
+}
+.intro-videos .section-heading .section-title:after {
+  content: " ";
+  background-image: radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 50%, transparent 75%);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 102%;
 }
 .intro-videos .video-right {
   position: relative;
@@ -1393,7 +1400,7 @@ header .nav-right .lang-flag ul.dropdown-flag {
   opacity: 1;
 }
 .intro-videos .video-right:hover .bg-video {
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 .intro-videos .section-heading h3 {
   box-shadow: none;
@@ -1617,7 +1624,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 
 .class-character .character-list .list-item .boxed-content .title-character:hover {
-  box-shadow: 0 0 10px red;
+  box-shadow: 0 0 30px red;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1640,6 +1647,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 
   .class-character .character-list .list-item .boxed-content .title-character {
     font-size: 40px;
+    padding: 12px 10px;
   }
 
   .boxed-content .btn-second-small {
@@ -1657,9 +1665,16 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     box-shadow: 0 65px 0 0 white;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .class-character .character-list .list-item .boxed-content .title-character {
     font-size: 35px;
+    padding: 12px 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .class-character .character-list .list-item .boxed-content .title-character {
+    font-size: 30px;
+    padding: 12px 10px;
   }
 
   .class-character .character-list .list-item .boxed-content {
@@ -1707,6 +1722,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 
   .class-character .character-list .list-item .boxed-content .title-character {
     font-size: 26px;
+    padding: 12px 10px;
   }
 
   .class-character .character-list .list-item .boxed-content .desc-character {
@@ -1715,11 +1731,18 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 @media screen and (max-width: 480px) {
   .class-character .character-list .list-item .boxed-content {
-    left: 25px;
+    left: 50px;
   }
 
   .class-character .character-list .list-item .boxed-content .title-character {
     font-size: 22px;
+    padding: 12px 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .class-character .character-list .list-item .boxed-content .title-character {
+    font-size: 16px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1729,11 +1752,11 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .features {
-  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-size: auto;
+  background-image: url(../images/bg-section/bg-section-features.jpg);
+  background-size: cover;
   background-position: center;
-  padding: 60px 0;
-  background-repeat: repeat;
+  padding-top: 60px;
+  background-repeat: repeat-x;
 }
 .features .text-orange {
   color: #E5650E;
@@ -1801,6 +1824,13 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 @media screen and (max-width: 991px) {
+  .features {
+    background-size: inherit;
+    background-position: center;
+    padding-top: 40px;
+    background-repeat: inherit;
+  }
+
   .features .grid-box {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
@@ -1831,11 +1861,11 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .economics {
-  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-size: auto;
+  background-image: url(../images/bg-section/bg-section-economic.jpg);
+  background-size: cover;
   background-position: center;
-  padding: 60px 0;
-  background-repeat: repeat;
+  padding-top: 60px;
+  background-repeat: repeat-x;
 }
 .economics .grid-box {
   display: grid;
@@ -1877,6 +1907,13 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 @media screen and (max-width: 991px) {
+  .economics {
+    background-size: inherit;
+    background-position: center;
+    padding-top: 40px;
+    background-repeat: inherit;
+  }
+
   .economics .grid-box {
     grid-gap: 25px;
     grid-template-columns: 1fr 1fr;
@@ -1926,18 +1963,19 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .roadmap {
-  background-image: url(../images/bg-section/osimi-bg-section-orange.jpg);
+  background-image: url(../images/bg-section/bg-section-roadmap.jpg);
   position: relative;
-  background-position: bottom;
+  background-position: center;
   z-index: 1;
-  padding-bottom: 500px;
-  background-repeat: repeat;
+  padding-bottom: 600px;
+  background-repeat: repeat-x;
   background-size: cover;
+  padding-top: 60px;
 }
 .roadmap .section-heading {
   position: relative;
   z-index: 3;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .roadmap .content-rm .flex-row-one {
   display: flex;
@@ -2012,7 +2050,11 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 @media screen and (max-width: 991px) {
   .roadmap {
-    padding-bottom: 200px;
+    padding-bottom: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    padding-top: 60px;
   }
 
   .chart-roadmap {
@@ -2034,6 +2076,10 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+  }
+
+  .roadmap .section-heading {
+    margin-bottom: 40px;
   }
 
   .roadmap .content-rm .flex-row-two .flex-item {
@@ -2165,15 +2211,16 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     opacity: 0;
   }
 }
-.token {
-  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat-y;
+.token#token {
+  background-image: url(../images/bg-section/bg-section-allocation.jpg);
+  background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 1;
-  padding: 0;
+  padding-top: 60px;
 }
+
 .token .container {
   position: relative;
   z-index: 3;
@@ -2258,6 +2305,13 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 
 @media screen and (max-width: 991px) {
+  .token#token {
+    background-repeat: inherit;
+    background-position: center;
+    background-size: inherit;
+    padding-top: 40px;
+  }
+
   .token .col-lg-6:first-child {
     margin-bottom: 50px;
   }
@@ -2328,11 +2382,11 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .metric {
-  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat-y;
+  background-image: url(../images/bg-section/bg-section-metric.jpg);
+  background-repeat: repeat-x;
   background-size: cover;
-  background-position: cener;
-  padding-bottom: 60px;
+  background-position: center;
+  padding: 0;
 }
 
 .token .token-info-content tbody tr td:hover {
@@ -2340,7 +2394,18 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   color: black;
 }
 
+#token .section-heading {
+  margin-bottom: 140px;
+}
+
 @media screen and (max-width: 991px) {
+  .metric {
+    background-repeat: inherit;
+    background-size: inherit;
+    background-position: center;
+    padding: 0;
+  }
+
   .token-table {
     padding: 10px;
   }
@@ -2352,6 +2417,10 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   .token table.table-metric {
     border-spacing: 15px;
     border-collapse: separate;
+  }
+
+  #token .section-heading {
+    margin-bottom: 85px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -2771,11 +2840,11 @@ ul.character-socials a:hover:after {
   }
 }
 .teams {
-  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat-y;
+  background-image: url(../images/bg-section/bg-section-teams.jpg);
+  background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 .teams .team-slider .team {
   background: #000000;
@@ -2835,6 +2904,14 @@ ul.character-socials a:hover:after {
     padding-top: 80px;
   }
 }
+@media screen and (max-width: 991px) {
+  .teams {
+    background-repeat: inherit;
+    background-size: inherit;
+    background-position: center;
+    padding: 40px 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .teams {
     padding: 70px 0 40px 0;
@@ -2864,8 +2941,8 @@ ul.character-socials a:hover:after {
 }
 footer.footer {
   padding: 75px 0;
-  background-image: url(../images/bg-section/osimi-bg-section-footer.jpg);
-  background-position: center;
+  background-image: url(../images/bg-section/bg-footer.jpg);
+  background-position: left;
   background-size: auto;
   background-repeat: repeat;
   position: relative;
@@ -2912,20 +2989,6 @@ footer.footer .menu-socials i {
 .footer .container {
   position: relative;
   z-index: 20;
-}
-
-.footer:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.527);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  z-index: 9;
 }
 
 .scroll-up {

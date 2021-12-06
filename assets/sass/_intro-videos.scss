@@ -5,6 +5,9 @@
   .section-heading{
     .section-title{
       line-height: 1;
+      position: relative;
+      padding-bottom: 30px;
+      margin-bottom: 40px;
       .text-border{
         font-size: 100px;
         color: black;
@@ -14,6 +17,16 @@
       font-size: 80px;
       letter-spacing: 0px;
       color: $primary-color;
+    }
+    .section-title:after{
+      content: '\00a0';
+      background-image: radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 50%, transparent 75%);
+      background-size: 100% 5px;
+      background-repeat: no-repeat;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 102%;
     }
   }
   .video-right {
@@ -121,7 +134,7 @@
     opacity: 1;
   }
   .video-right:hover .bg-video{
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
   .section-heading {
     h3{

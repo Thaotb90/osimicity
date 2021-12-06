@@ -1,9 +1,9 @@
 .teams {
-  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat:repeat-y;
+  background-image: url(../images/bg-section/bg-section-teams.jpg);
+  background-repeat:repeat-x;
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 60px 0;
   .team-slider{
     
     .team{
@@ -62,6 +62,15 @@ border-radius: 10px 0 0 10px;
     padding-top: 80px;
 }
 }
+@media screen and (max-width: 991px) {
+.teams{
+  background-repeat:inherit;
+  background-size: inherit;
+  background-position: center;
+  padding: 40px 0;
+}
+}
+
 @media screen and (max-width: 768px) {
   .teams {
     padding: 70px 0 40px 0;

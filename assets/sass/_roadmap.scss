@@ -1,15 +1,16 @@
 .roadmap {
-  background-image: url(../images/bg-section/osimi-bg-section-orange.jpg);
+  background-image: url(../images/bg-section/bg-section-roadmap.jpg);
   position: relative;
-  background-position: bottom;
+  background-position: center;
   z-index: 1;
-  padding-bottom: 500px;
-  background-repeat: repeat;
+  padding-bottom: 600px;
+  background-repeat: repeat-x;
   background-size: cover;
+  padding-top: 60px;
   .section-heading {
     position: relative;
     z-index: 3;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     .section-title {
     }
   }
@@ -91,7 +92,11 @@
 }
 @media screen and (max-width: 991px) {
   .roadmap {
-    padding-bottom: 200px;
+    padding-bottom: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    padding-top: 60px;
 }
   .chart-roadmap  {
     display: none;
@@ -110,6 +115,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+}
+.roadmap .section-heading {
+  margin-bottom: 40px;
 }
 .roadmap .content-rm .flex-row-two .flex-item {
   margin: 0 !important;

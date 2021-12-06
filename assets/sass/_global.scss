@@ -83,9 +83,6 @@ input:focus {
   width: 100%;
 }
 section {
-  padding: 60px 0;
-}
-section {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,18 +237,21 @@ img {
 
 
 .btn-second-small {
-  font-size: 30px;
-  font-weight: normal;
-  color:white;
-  text-transform: uppercase;
-  padding: 7px 40px;
-  height: 60px;
-  background: transparent ;
-  margin: 60px 0;
-  border-radius: 0;
-  border: 2px solid $primary-color;
-  position: relative;
-  transition: 0.3s all;
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+    padding: 7px 40px;
+    height: 60px;
+    background: transparent;
+    margin: 60px 0;
+    border-radius: 0;
+    border: 2px solid;
+    position: relative;
+    transition: 0.3s all;
+    border-image-slice: 1;
+    border-image-source: linear-gradient( 
+99deg, #fdbe04, #ff4137);
 }
 .btn-second-small:before{
   content: "";
@@ -331,9 +331,9 @@ img {
 }
 @media screen and (max-width: 769px) {
 
-  section {
-    padding: 60px 0;
-}
+//   section {
+//     padding: 60px 0;
+// }
 .section-heading .section-title {
   font-size: 35px;
 }

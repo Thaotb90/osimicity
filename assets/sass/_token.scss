@@ -1,12 +1,14 @@
-.token {
-  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat-y;
+.token#token{
+  background-image: url(../images/bg-section/bg-section-allocation.jpg);
+  background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
-  
   position: relative;
   z-index: 1;
-  padding: 0;
+  padding-top: 60px;
+}
+.token {
+
   .container {
     position: relative;
     z-index: 3;
@@ -95,6 +97,12 @@
 
 
 @media screen and (max-width: 991px) {
+  .token#token{
+    background-repeat: inherit;
+    background-position: center;
+    background-size: inherit;
+    padding-top: 40px;
+  }
   .token{
     .col-lg-6:first-child {
       margin-bottom: 50px;

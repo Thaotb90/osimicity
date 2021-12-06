@@ -1,8 +1,9 @@
 .intro {
   padding: 0;
   position: relative;
-  min-height: 100vh;
+  min-height: calc( 100vh + 100px );
   background-image: url(../images/bg-section/osimi-bg-section-hero.jpg);
+  background-position: bottom;
   .bg-overlay{
     position: absolute;
     top: 0;

@@ -1,15 +1,24 @@
 .metric{
-    background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-    background-repeat:repeat-y;
+    background-image: url(../images/bg-section/bg-section-metric.jpg);
+    background-repeat:repeat-x;
     background-size: cover;
-    background-position: cener;
-    padding-bottom: 60px;
+    background-position: center;
+    padding: 0;
 }
 .token .token-info-content tbody tr td:hover {
     background-color: lightgray;
     color: black;
 }
+#token .section-heading{
+    margin-bottom: 140px;
+}
 @media screen and (max-width: 991px) {
+    .metric{
+        background-repeat:inherit;
+        background-size: inherit;
+        background-position: center;
+        padding: 0;
+    }
     .token-table {
         padding: 10px;
     }
@@ -20,6 +29,9 @@
 .token table.table-metric {
     border-spacing: 15px;
     border-collapse: separate;
+}
+#token .section-heading {
+    margin-bottom: 85px;
 }
 }
 @media screen and (max-width: 580px){
