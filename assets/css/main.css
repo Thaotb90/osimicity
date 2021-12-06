@@ -905,26 +905,26 @@ img {
   content: "";
   position: absolute;
   background-color: #E5650E;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  width: 50%;
+  height: 2px;
+  left: 50%;
   z-index: -1;
-  transform: skewX(-15deg);
+  transform: skewX(-45deg) translateX(-50%);
   opacity: 0;
-  transition: 0.3s;
+  bottom: 0px;
+  transition: all 0.3s ease 0s;
 }
 .header-main-inner .navbar-nav .nav-item .nav-link.active:before {
   opacity: 1;
 }
 .header-main-inner .navbar-nav .nav-item .nav-link.active {
-  color: black;
+  color: white;
 }
 .header-main-inner .navbar-nav .nav-item:hover .nav-link:before {
   opacity: 1;
 }
 .header-main-inner .navbar-nav .nav-item:hover .nav-link {
-  color: black;
+  color: white;
 }
 .header .navbar {
   box-shadow: 3px 6px 10px rgba(127, 127, 127, 0.5);
@@ -937,14 +937,15 @@ img {
   padding: 0;
 }
 
-nav {
-  transition: 0.3s all;
+.header nav {
+  transition: 0.3s ease;
+  padding: 15px 0;
 }
 
 .header nav.change-height {
-  height: 75px;
-  transition: 0.4s all;
-  padding: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s ease;
+  padding: 10px 0;
 }
 
 .header nav.change-height .nav-right .btn-outline-primary {
@@ -1024,10 +1025,11 @@ header .nav-right {
 .header .nav-right .switch-lang .group-lang {
   color: #e5650e;
   font-family: "Marcellus SC", serif;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1280px) {
