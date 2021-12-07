@@ -119,7 +119,6 @@ $('.team-slider').slick({
     ]
   });
  
-  // Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
+  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#nav-scrollspy'
+  })
