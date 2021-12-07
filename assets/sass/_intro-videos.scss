@@ -172,6 +172,9 @@
     text-align: center;
   }
 }
+.btn-outline-primary:hover span{
+  animation: glitch-text .1s steps(1) 6 alternate forwards,glitch-blink .3s steps(1) 2;
+}
 @media screen and (max-width: 1440px) {
   .intro-videos .section-heading .section-title .text-border {
     font-size: 80px;

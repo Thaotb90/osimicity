@@ -120,5 +120,5 @@ $('.team-slider').slick({
   });
  
   var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-    target: '#nav-scrollspy'
+    target: '#navbar-scrollspy'
   })

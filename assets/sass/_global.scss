@@ -947,3 +947,67 @@ img {
     transform: skew(59, 100deg);
   }
 }
+@keyframes glitch-text {
+	25% {
+		transform: skew(10deg) scaleX(1.05);
+	}
+
+	50% {
+		transform: skew(-20deg) scaleX(1.08);
+	}
+
+	75% {
+		transform: skew(15deg);
+	}
+
+	to {
+		transform: skew(0) scaleX(1);
+	}
+}
+@keyframes glitch-blink {
+	50% {
+		opacity: 0;
+	}
+
+	75% {
+		opacity: 1;
+	}
+}
+@keyframes news-flash-red {
+	0% {
+		opacity: 1;
+	}
+
+	10% {
+		opacity: .7;
+	}
+
+	20% {
+		opacity: .7;
+	}
+
+	to {
+		opacity: .5;
+	}
+}
+@keyframes glitch-bg-position {
+	0% {
+		background-position: 0 0;
+	}
+
+	25% {
+		background-position: 2px 2px;
+	}
+
+	50% {
+		background-position: 2px -2px;
+	}
+
+	75% {
+		background-position: -2px 2px;
+	}
+
+	to {
+		background-position: -2px -2px;
+	}
+}
