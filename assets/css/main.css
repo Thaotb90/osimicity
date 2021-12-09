@@ -1815,6 +1815,7 @@ li.active .menu-link {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: left;
   position: relative;
   z-index: 1;
 }
