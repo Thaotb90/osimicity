@@ -1390,13 +1390,8 @@ img {
   margin-bottom: 0;
 }
 
-.menu-item:not(:first-child) {
+.menu-primary .menu-item:not(:first-child) {
   margin-left: 15px;
-}
-
-.menu-link {
-  text-decoration: none;
-  color: #333;
 }
 
 /* Css menu */
@@ -2691,6 +2686,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     position: relative;
     max-width: 500px;
     margin: auto;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 520px) {
@@ -2839,6 +2835,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     position: relative;
     max-width: 500px;
     margin: auto;
+    overflow: hidden;
   }
 
   .economics .grid-box {

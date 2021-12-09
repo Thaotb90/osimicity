@@ -5,12 +5,8 @@
   padding: 20px;
   margin-bottom: 0;
 }
-.menu-item:not(:first-child) {
+.menu-primary .menu-item:not(:first-child) {
   margin-left: 15px;
-}
-.menu-link {
-  text-decoration: none;
-  color: #333;
 }
 
 
