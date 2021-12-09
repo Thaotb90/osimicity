@@ -14,7 +14,7 @@
     .feature-item {
       position: relative;
       .content-item {
-        transition: 0.4s all;
+        transition: 0.15s all;
         .boxed-img {
           width: 100%;
           height: 100%;
@@ -27,10 +27,7 @@
           }
         }
       }
-      .content-item:hover {
-        transform: scale(1.02);
-        filter: drop-shadow(0 0 20px $primary-color);
-      }
+
       .content-item:hover .bg-overlay {
         opacity: 0.5;
       }
@@ -39,17 +36,22 @@
         text-align: left;
         transition: 0.3s all;
         position: relative;
-        overflow: hidden;
+        z-index: 1;
+        // overflow: hidden;
         .title-item {
           font-size: 22px;
           color: $primary-color;
           margin-bottom: 20px;
           text-transform: uppercase;
           line-height: 28px;
+          position: relative;
+          z-index: 1;
         }
         .desc-item {
           text-transform: uppercase;
           font-size: 16px;
+          position: relative;
+          z-index: 1;
         }
       }
       .content-text:after{
@@ -63,10 +65,31 @@
         opacity: 0;
         visibility: hidden;
         filter: brightness(0.6);
+        z-index: 0;
       }
+      .content-text:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 30%;
+        background-image: url(../images/features/electric.png);
+        opacity: 0;
+        visibility: hidden;
+        background-size: cover;
+        background-position: center;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+      }
+    }
+    .feature-item:hover .boxed-img{
+      transform: scale(1.02);
+      filter: drop-shadow(0 0 20px $primary-color);
     }
     .feature-item:hover .title-item {
       animation: glitch-text .1s steps(1) 6 alternate forwards,glitch-blink .3s steps(1) 2;
+      text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.774);
     }
     .feature-item:hover .content-text::after {
       animation: news-flash-red .6s ease-in-out forwards,glitch-bg-position .3s linear 3 alternate forwards;
@@ -74,9 +97,18 @@
       visibility: visible;
 
     }
+    .feature-item:hover .content-text::before {
+      // animation: news-flash-red .6s ease-in-out forwards,glitch-bg-position .3s linear 3 alternate forwards;
+      opacity: 0.3;
+      visibility: visible;
+      animation: glitch-text .05s steps(2) 10 alternate forwards,glitch-blink .1s steps(1) 2;
+
+    }
   }
 }
-
+.features .grid-box .feature-item:hover .content-item {
+  transform: scale(1.02);
+}
 @media screen and (max-width: 1280px) {
   .features .grid-box .feature-item .content-text .title-item {
     font-size: 18px;

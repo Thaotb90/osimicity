@@ -175,6 +175,41 @@
 .btn-outline-primary:hover span{
   animation: glitch-text .1s steps(1) 6 alternate forwards,glitch-blink .3s steps(1) 2;
 }
+
+.intro-videos .section-heading span.animation-text{
+  position: relative;
+  text-shadow: 2px 2px 0 white;
+  animation: glitch-anim-skew .5s linear infinite alternate;
+}
+.intro-videos .section-heading span.animation-text:before {
+content: attr(data-innertext);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+animation: glitch-anim-2-vertical 1.75s linear infinite alternate;
+clip: auto;
+z-index: 0;
+color: gold;
+}
+.intro-videos .section-heading span.animation-text:after {
+content: attr(data-innertext);
+position: absolute;
+top: -10px;
+left: 0;
+width: 100%;
+height: 100%;
+// animation: glitch-anim-2-vertical 1.75s linear infinite alternate;
+// clip: auto;
+z-index: 0;
+color: rgba(255, 255, 255, 0.507);
+clip: rect(0,95px,700px,40px);
+    transform: translate3d(-20px,0,0);
+    animation: glitch-anim-alt-1-vertical 1.75s linear infinite alternate;
+    
+}
+
 @media screen and (max-width: 1440px) {
   .intro-videos .section-heading .section-title .text-border {
     font-size: 80px;

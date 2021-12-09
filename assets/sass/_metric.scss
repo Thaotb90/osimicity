@@ -5,9 +5,13 @@
   background-position: center;
   padding-bottom: 80px;
 }
+.token .token-info-content tbody tr td {
+transition: 0.25s ease;
+}
 .token .token-info-content tbody tr td:hover {
   background-color: lightgray;
   color: black;
+  transform: scale(1.03);
 }
 #token .section-heading {
   margin-bottom: 140px;

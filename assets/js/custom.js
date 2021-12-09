@@ -1,3 +1,31 @@
+window.addEventListener("load", function () {
+    const menu = document.querySelector(".menu-primary");
+    const menuBg = document.querySelector(".menu-bg");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menuClose = document.querySelector(".menu-close");
+    menuToggle.addEventListener("click", handleToggleMenu);
+    function handleToggleMenu(e) {
+      menuBg.classList.add("is-active");
+      menu.classList.add("is-active");
+      menuClose.classList.add("is-active");
+    }
+    menuClose.addEventListener("click", function () {
+      menuBg.classList.remove("is-active");
+      menu.classList.remove("is-active");
+      this.classList.remove("is-active");
+      // change
+    });
+  });
+  $(document).ready(function(){
+      $('.header .menu-primary .menu-item').click (function(){
+          $('.header .menu-primary .menu-item').removeClass('active');
+          $(this).addClass('active');
+          $('.menu-close').removeClass('is-active');
+          $('.menu-primary').removeClass('is-active');
+          $('.menu-bg').removeClass('is-active');
+      })
+      
+  })
 /* Animated Titles of Sections*/
 
 function isScrolledIntoView(elem) {
@@ -122,3 +150,10 @@ $('.team-slider').slick({
   var scrollSpy = new bootstrap.ScrollSpy(document.body, {
     target: '#navbar-scrollspy'
   })
+
+
+  AOS.init({
+    offset: 400, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1000 // values from 0 to 3000, with step 50ms
+  });

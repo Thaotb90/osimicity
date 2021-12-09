@@ -92,6 +92,28 @@
   border-radius: 25px;
   box-shadow: 0 0 72px -15px $primary-color;
 }
+@supports (animation-timeline: works) {
+  .token#token .chart-box {
+    animation: 1s linear forwards flip-card;
+    animation-timeline: flip-timeline;
+    transform-style: preserve-3d ;
+    backface-visibility: hidden;
+  }
+  @scroll-timeline flip-timeline {
+    time-range: 1s;
+  }
+  
+@keyframes flip-card{
+  from {
+    opacity: 0;
+    transform: rotateX(-120deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+}
 
 @media screen and (max-width: 991px) {
   .token#token{
