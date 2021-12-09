@@ -25,85 +25,15 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   
     <!-- AOS library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?v=1" />
 
-    <link rel="stylesheet" href="./assets/css/main.css?v=15"/>
+    <link rel="stylesheet" href="./assets/css/main.css?v=16"/>
 
     <link rel="stylesheet" href="./assets/vendor/animate/animate.css" />
   </head>
 
   <body>
-    <!-- <header id="header" class="header wrapper">
-      <div class="header-main">
-        <nav id="navbar-scrollspy" class="navbar navbar-expand-lg navbar-light fixed-top navbar-scroll">
-          <div class="container-fluid">
-            <div class="header-main-inner">
-              <div class="navbar-header">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="#" class="navbar-brand"
-                  ><img src="./assets/images/logo.png" alt="brand"
-                /></a>
-              </div>
-             
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-right">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#header"
-                      >Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#features">Feature</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#token">tokens</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#roadmap">Roadmap</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#teams">Teams</a
-                    >
-                  </li>
-
-              </div>
-      
-              <div class="nav-right">
-                <a href="#!" class="btn--playnow"><img src="./assets/images/btn-playnow.png" alt=""></a>
-                <div class="switch-lang">
-                  <a href="#!">
-                    <div class="boxed-img"><img src="./assets/images/icon-lang.png" alt=""></div>
-                  </a>
-                  <ul class="menu-lang">
-                    <li class="lang-item"><a href="#!" class="lang-link">EN</a></li>
-                    <li class="lang-item"><a href="#!" class="lang-link">VI</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-        </nav>
-      </div>
-    </header> -->
-
-    <header class="header">
+    <header class="header" >
       <div class="wrapper-header">
         <div class="container-fluid">
           <div class="header-main">
@@ -111,7 +41,7 @@
             <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
             <ion-icon name="close-outline" class="menu-close"></ion-icon>
             <div class="menu-bg"></div>
-            <ul class="menu-primary">
+            <ul class="menu-primary" id="navbar-scrollspy">
               <li class="menu-item active">
                 <a href="#intro" class="menu-link">Home</a>
               </li>
@@ -944,7 +874,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./assets/js/custom.js?v=5"></script>
+    <script src="./assets/js/custom.js?v=6"></script>
     <script src="./assets/js/video.js"></script>
     <script src="assets/js/slick-custom.js"></script>
 
