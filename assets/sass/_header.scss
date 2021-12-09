@@ -16,15 +16,16 @@
 
 /* Css menu */
 
-.header{
-position: fixed;
-width: 100%;
-top: 0;
-z-index: 1000;
+.header-main{
+
 }
 .wrapper-header {
   background-color: black;
   position: relative;
+  position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
 }
 .wrapper-header.change-bg {
   background-color: rgba(0, 0, 0, 0.7);

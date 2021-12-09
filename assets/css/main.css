@@ -1136,16 +1136,13 @@ img {
 }
 
 /* Css menu */
-.header {
+.wrapper-header {
+  background-color: black;
+  position: relative;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-}
-
-.wrapper-header {
-  background-color: black;
-  position: relative;
 }
 
 .wrapper-header.change-bg {
