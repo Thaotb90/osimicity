@@ -1344,6 +1344,18 @@ li.active .menu-link {
   display: none;
 }
 
+.header .wrapper-header::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: radial-gradient(at 50% 0, #ffffff94, transparent 70%);
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
