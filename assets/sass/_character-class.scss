@@ -71,6 +71,7 @@
           font-weight: normal;
           p {
             margin-bottom: 0;
+            text-transform: uppercase;
           }
         }
         .btn-second-small {
@@ -82,11 +83,11 @@
 .character-list .btn-second-small{
   position: relative;
   transition: 0.25 ease;
-
-
+  line-height: 180%;
 }
 .character-list .btn-second-small span{
   position: relative;
+  font-family: "AquireBold";
 }
 .character-list .btn-second-small span:before{
   box-sizing: border-box;
@@ -182,6 +183,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     font-size: 18px;
     p {
       margin-bottom: 10px;
+
     }
   }
   .class-character .character-list .list-item .boxed-content .title-character {
