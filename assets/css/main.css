@@ -1518,9 +1518,35 @@ li.active .menu-link {
 }
 .header-right .play-now .boxed-img {
   margin-bottom: 0;
+  position: relative;
 }
 .header-right .play-now .boxed-img img {
   max-height: 45px;
+  filter: invert(1) drop-shadow(0 0 10px white);
+}
+.header-right .play-now .boxed-img .animation-play-now {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/btn-playnow.png);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.header-right .play-now:hover .animation-play-now {
+  display: block;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: glitch-anim-2;
+  animation-name: glitch-anim-2;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 .select-lang {
@@ -1776,10 +1802,13 @@ li.active .menu-link {
   width: 100%;
   height: 100%;
 }
+.intro .boxed-img {
+  overflow: unset;
+}
 .intro .boxed-img img {
   object-fit: cover;
   opacity: 1;
-  transition: 0.3s ease-out;
+  transition: 0.5s ease-in-out;
 }
 .intro .video-intro video#myVideo {
   width: 100%;
@@ -1815,6 +1844,7 @@ li.active .menu-link {
 #intro .content-intro .boxed-img:hover img {
   opacity: 1;
   filter: invert(1) drop-shadow(0 0 10px red);
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1023px) {
