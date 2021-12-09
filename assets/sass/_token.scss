@@ -92,29 +92,38 @@
   border-radius: 25px;
   box-shadow: 0 0 72px -15px $primary-color;
 }
-@supports (animation-timeline: works) {
-  .token#token .chart-box {
-    animation: 1s linear forwards flip-card;
-    animation-timeline: flip-timeline;
-    transform-style: preserve-3d ;
-    backface-visibility: hidden;
-  }
-  @scroll-timeline flip-timeline {
-    time-range: 1s;
-  }
-  
-@keyframes flip-card{
-  from {
-    opacity: 0;
-    transform: rotateX(-120deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotateX(0deg);
-  }
+#token .boxed-img{
+  position: relative;
 }
+.animation-chart-left, .animation-chart-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
 }
-
+.animation-chart-left {
+  background-image: url(../images/token/chart-left.png);
+}
+.animation-chart-right {
+  background-image: url(../images/token/chart-right.png);
+}
+.chart-box:hover .animation-chart-left, .chart-box:hover .animation-chart-right{
+  display: block;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: glitch-anim-2;
+    animation-name: glitch-anim-2;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
 @media screen and (max-width: 991px) {
   .token#token{
     background-repeat: inherit;

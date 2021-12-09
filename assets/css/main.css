@@ -1118,6 +1118,270 @@ img {
   --bezier: cubic-bezier(.3,-0.01,.49,1) ;
 }
 
+@-webkit-keyframes glitch-anim-2 {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) rotate(-2deg);
+    transform: translateZ(0) rotate(-2deg);
+    -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+    clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+  }
+  2% {
+    -webkit-clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    -webkit-transform: translate(-5px) rotate(-2deg);
+    transform: translate(-5px) rotate(-2deg);
+  }
+  6% {
+    -webkit-clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    -webkit-transform: translate(5px) rotate(-2deg);
+    transform: translate(5px) rotate(-2deg);
+  }
+  8% {
+    -webkit-clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    -webkit-transform: translate(-5px) rotate(-2deg);
+    transform: translate(-5px) rotate(-2deg);
+  }
+  9% {
+    -webkit-clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    -webkit-transform: translate(0) rotate(-2deg);
+    transform: translate(0) rotate(-2deg);
+  }
+  10% {
+    -webkit-clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  13% {
+    -webkit-clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    -webkit-transform: translateZ(0) rotate(-2deg);
+    transform: translateZ(0) rotate(-2deg);
+  }
+  13.1% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  15% {
+    -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  20% {
+    -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+    transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  20.1% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  25% {
+    -webkit-clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  30% {
+    -webkit-clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+    transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  30.1% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0) rotate(-2deg);
+  }
+  35% {
+    -webkit-clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    -webkit-transform: translate(-5px) rotate(-2deg);
+    transform: translate(-5px) rotate(-2deg);
+  }
+  40% {
+    -webkit-clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    -webkit-transform: translate(5px) rotate(-2deg);
+    transform: translate(5px) rotate(-2deg);
+  }
+  45% {
+    -webkit-clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    -webkit-transform: translate(-5px) rotate(-2deg);
+    transform: translate(-5px) rotate(-2deg);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    -webkit-transform: translate(0) rotate(-2deg);
+    transform: translate(0) rotate(-2deg);
+  }
+  55% {
+    -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  60% {
+    -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    -webkit-transform: translateZ(0) rotate(-2deg);
+    transform: translateZ(0) rotate(-2deg);
+    opacity: 1;
+  }
+  60.1% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0) rotate(-2deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0) rotate(-2deg);
+    opacity: 1;
+  }
+}
+@keyframes glitch-anim-2 {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) rotate(-2deg);
+    transform: translateZ(0) rotate(-2deg);
+    -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+    clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+  }
+  2% {
+    -webkit-clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    -webkit-transform: translate(-5px) rotate(-2deg);
+    transform: translate(-5px) rotate(-2deg);
+  }
+  6% {
+    -webkit-clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    -webkit-transform: translate(5px) rotate(-2deg);
+    transform: translate(5px) rotate(-2deg);
+  }
+  8% {
+    -webkit-clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    -webkit-transform: translate(-5px) rotate(-2deg);
+    transform: translate(-5px) rotate(-2deg);
+  }
+  9% {
+    -webkit-clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    -webkit-transform: translate(0) rotate(-2deg);
+    transform: translate(0) rotate(-2deg);
+  }
+  10% {
+    -webkit-clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  13% {
+    -webkit-clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    -webkit-transform: translateZ(0) rotate(-2deg);
+    transform: translateZ(0) rotate(-2deg);
+  }
+  13.1% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  15% {
+    -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  20% {
+    -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+    transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  20.1% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  25% {
+    -webkit-clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  30% {
+    -webkit-clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    -webkit-transform: translate3d(-5px, 0, 0) rotate(-2deg);
+    transform: translate3d(-5px, 0, 0) rotate(-2deg);
+  }
+  30.1% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0) rotate(-2deg);
+  }
+  35% {
+    -webkit-clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    -webkit-transform: translate(-5px) rotate(-2deg);
+    transform: translate(-5px) rotate(-2deg);
+  }
+  40% {
+    -webkit-clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    -webkit-transform: translate(5px) rotate(-2deg);
+    transform: translate(5px) rotate(-2deg);
+  }
+  45% {
+    -webkit-clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    -webkit-transform: translate(-5px) rotate(-2deg);
+    transform: translate(-5px) rotate(-2deg);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    -webkit-transform: translate(0) rotate(-2deg);
+    transform: translate(0) rotate(-2deg);
+  }
+  55% {
+    -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    -webkit-transform: translate3d(5px, 0, 0) rotate(-2deg);
+    transform: translate3d(5px, 0, 0) rotate(-2deg);
+  }
+  60% {
+    -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    -webkit-transform: translateZ(0) rotate(-2deg);
+    transform: translateZ(0) rotate(-2deg);
+    opacity: 1;
+  }
+  60.1% {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0) rotate(-2deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0) rotate(-2deg);
+    opacity: 1;
+  }
+}
 .menu-primary {
   display: flex;
   align-items: center;
@@ -1514,6 +1778,8 @@ li.active .menu-link {
 }
 .intro .boxed-img img {
   object-fit: cover;
+  opacity: 1;
+  transition: 0.3s ease-out;
 }
 .intro .video-intro video#myVideo {
   width: 100%;
@@ -1532,83 +1798,6 @@ li.active .menu-link {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
-.intro .content-intro .caption {
-  font-size: 25px;
-  text-transform: uppercase;
-  color: #E5650E;
-  font-weight: 800;
-}
-.intro .content-intro .title-primary {
-  font-size: 120px;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  font-family: "pricedown";
-  letter-spacing: 1px;
-}
-.intro .content-intro .animation-title {
-  mix-blend-mode: multiply;
-  animation-name: glitch-anim-text;
-  animation-name: glitch-anim-text-overlay;
-  animation-delay: 0.3s;
-  animation-duration: 1.2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.intro .content-intro .intro-desc {
-  line-height: 28px;
-}
-.intro .content-intro .btn--primary {
-  text-transform: uppercase;
-  color: black;
-  padding: 10px 30px;
-  transform: skewX(-15deg);
-  border: 2px solid #E5650E;
-  border-radius: 0;
-  background-color: #E5650E;
-  transition: 0.3s;
-  position: relative;
-  margin: 0;
-  margin-top: 30px;
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  outline: none;
-  box-sizing: border-box;
-  display: inline-block;
-}
-.intro .content-intro .btn--primary:after {
-  position: absolute;
-  content: "";
-  width: 5px;
-  height: calc(100% + 4px);
-  background-color: #E5650E;
-  right: -20px;
-  top: -2px;
-  transition: 0.3s all;
-}
-.intro .content-intro .btn--primary:hover:after {
-  right: 0;
-}
-.intro .content-intro .btn--wp {
-  margin-right: 70px;
-}
-.intro .content-intro .btn--play {
-  background-color: transparent;
-  border: 2px solid #E5650E;
-  color: white;
-}
-.intro .content-intro .btn--wp:hover {
-  background: transparent;
-  color: white;
-}
-.intro .content-intro .btn--wp:hover::after {
-  width: 1px;
-}
-.intro .content-intro .btn--play:hover {
-  background: #E5650E;
-  color: white;
-}
 
 .intro:after {
   content: "";
@@ -1617,6 +1806,15 @@ li.active .menu-link {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#intro .content-intro .boxed-img {
+  position: relative;
+}
+
+#intro .content-intro .boxed-img:hover img {
+  opacity: 1;
+  filter: invert(1) drop-shadow(0 0 10px red);
 }
 
 @media screen and (max-width: 1023px) {
@@ -2980,28 +3178,43 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   box-shadow: 0 0 72px -15px #E5650E;
 }
 
-@supports (animation-timeline: works) {
-  .token#token .chart-box {
-    animation: 1s linear forwards flip-card;
-    animation-timeline: flip-timeline;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-  }
-
-  @scroll-timeline flip-timeline {
-    time-range: 1s;
-  }
-  @keyframes flip-card {
-    from {
-      opacity: 0;
-      transform: rotateX(-120deg);
-    }
-    to {
-      opacity: 1;
-      transform: rotateX(0deg);
-    }
-  }
+#token .boxed-img {
+  position: relative;
 }
+
+.animation-chart-left, .animation-chart-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.animation-chart-left {
+  background-image: url(../images/token/chart-left.png);
+}
+
+.animation-chart-right {
+  background-image: url(../images/token/chart-right.png);
+}
+
+.chart-box:hover .animation-chart-left, .chart-box:hover .animation-chart-right {
+  display: block;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: glitch-anim-2;
+  animation-name: glitch-anim-2;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
 @media screen and (max-width: 991px) {
   .token#token {
     background-repeat: inherit;
