@@ -282,9 +282,9 @@ body .bg-global {
   width: 15px;
   height: 15px;
   background: white;
-  top: -15px;
-  left: -15px;
-  box-shadow: 0 70px 0 0 white;
+  top: -30px;
+  left: -30px;
+  box-shadow: 0 100px 0 0 white;
   transition: 0.2s all;
 }
 .btn-second-small:after {
@@ -293,16 +293,10 @@ body .bg-global {
   width: 15px;
   height: 15px;
   background: white;
-  top: -15px;
-  right: -15px;
-  box-shadow: 0 70px 0 0 white;
+  top: -30px;
+  right: -30px;
+  box-shadow: 0 100px 0 0 white;
   transition: 0.2s all;
-}
-.btn-second-small:hover:before,
-.btn-second-small:hover:after {
-  background: red;
-  box-shadow: 0 70px 0 0 red;
-  border-radius: 10rem;
 }
 .btn-second-small:hover {
   box-shadow: 0 0 10px red !important;
