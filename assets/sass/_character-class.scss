@@ -3,7 +3,7 @@
   .character-list {
     .list-item {
       position: relative;
-      max-height: 85vh;
+      height: 85vh;
       .boxed-img {
         position: relative;
         width: 100%;
@@ -255,9 +255,6 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 @media screen and (max-width: 991px) {
-  .list-item {
-    max-height: 70vh;
-  }
   .class-character .character-list .list-item .boxed-content .title-character {
     font-size: 35px;
     padding: 12px 10px;
