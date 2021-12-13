@@ -2242,7 +2242,7 @@ li.active .menu-link {
 }
 .class-character .character-list .list-item {
   position: relative;
-  height: 70vh;
+  max-height: 85vh;
 }
 .class-character .character-list .list-item .boxed-img {
   position: relative;
@@ -2256,7 +2256,7 @@ li.active .menu-link {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
 .class-character .character-list .list-item .boxed-content {
@@ -2278,9 +2278,11 @@ li.active .menu-link {
   position: relative;
   display: inline-block;
   transition: 0.3s all;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 .class-character .character-list .list-item .boxed-content .title-character:hover {
   background-color: transparent;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.534);
 }
 .class-character .character-list .list-item .boxed-content .title-character:before {
   content: "";
@@ -2315,6 +2317,7 @@ li.active .menu-link {
 .class-character .character-list .list-item .boxed-content .desc-character p {
   margin-bottom: 0;
   text-transform: uppercase;
+  text-shadow: 2px 2px black;
 }
 .character-list .btn-second-small {
   position: relative;
@@ -2506,6 +2509,10 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 @media screen and (max-width: 991px) {
+  .list-item {
+    max-height: 70vh;
+  }
+
   .class-character .character-list .list-item .boxed-content .title-character {
     font-size: 35px;
     padding: 12px 10px;

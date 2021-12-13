@@ -1,99 +1,72 @@
-/* .preloader { position: fixed !important; top: 0; left: 0; right: 0; bottom: 0; z-index: 10000; }
-
-.preloader:before, .preloader:after { position: absolute; left: 0; height: 51%; width: 100%; transition: all .6s ease; background: #fff; content: ''; }
-
-.preloader:before { top: 0; }
-
-.page-loaded .preloader:before { transform: translate(0, -100%); }
-
-.preloader:after { bottom: 0; }
-
-.page-loaded .preloader:after { transform: translate(0, 100%); }
-
-.preloader.no-default { background-color: #3221ad; }
-
-.page-loaded .preloader.no-default:before, .page-loaded .preloader.no-default:after { transform: translate(0, 0); }
-
-.preloader.no-default:before, .preloader.no-default:after { position: absolute; top: 0; left: 0; height: 100%; transition: all .6s; background-color: #3221ad; }
-
-.preloader-alt:after, .preloader-alt:before { background: #3e2bc5; }
-
-.page-loaded .preloader.no-split:before, .page-loaded .preloader.no-split:after { transform: translate(0, 0); }
-
-.spinner { display: block; position: relative; left: 50%; top: 50%; width: 70px; height: 70px; margin: -35px 0 0 -35px; z-index: 1001; }
-
-.spinner-round { border-radius: 50%; border: 2px solid transparent; border-top-color: #07bcff; animation: spin 2s linear infinite; }
-
-.spinner-round:before, .spinner-round:after { content: ""; position: absolute; border-radius: 50%; border: 3px solid transparent; }
-
-.spinner-round:before { top: 5px; left: 5px; right: 5px; bottom: 5px; border-top-color: #7a5cff; animation: spin 3s linear infinite; }
-
-.spinner-round:after { top: 15px; left: 15px; right: 15px; bottom: 15px; border-top-color: #3221ad; animation: spin 1.5s linear infinite; }
-
-.spinner-alt { border-radius: 50%; width: 150px; height: 150px; margin: -75px 0 0 -75px; }
-
-.spinner-alt:after, .spinner-alt:before { content: ""; position: absolute; border-radius: 50%; top: 0; left: 0; right: 0; bottom: 0; }
-
-.spinner-alt:before { border: 1px solid rgba(255, 255, 255, 0.1); }
-
-.spinner-alt:after { border: 1px solid; border-top-color: #fff; border-right-color: transparent; border-left-width: 0; border-bottom-width: 0; animation: spin 1.5s linear infinite; }
-
-.spinner-alt.load-done { transition: all .4s; transform: scale(3); opacity: 0; border-color: transparent; }
-
-.spinner-alt.load-done:after, .spinner-alt.load-done:before { opacity: 0; }
-
-.spinner-alt.spinner-light { border: 1px solid rgba(10, 16, 21, 0.1); }
-
-.spinner-alt.spinner-light:after { border-top-color: #0a1015; }
-
-.spinner-brand { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100px; }
-
-@keyframes spin { 0% { -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg); } } */
-
-
-    #preloader {
-      background-color: #1a1819;
-      height: 100%;
-      margin-top: 0;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 10000;
-  }
-  #preloader {
-    overflow: hidden
+#preloader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/bg.svg);
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
-  
-  #loading-center {
-      background-image: url(../images/bg-section/header-texture.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100%;
-      position: relative;
-      width: 100%;
-      animation: zoomOut 2s linear infinite;
+#preloader .loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  top: 50%;
+  animation: loader 2s infinite ease;
+}
+
+#preloader .loader .loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
   }
   
-  #loading-center-absolute {
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%)
+  25% {
+    transform: rotate(180deg);
   }
-  .img-fluid {
-    max-width: 100%;
-    height: auto
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
 }
-@keyframes zoomOut {
-  from {
-    transform: scale(1.2);
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
   }
-  to {
-    transform: scale(1);
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
   }
 }

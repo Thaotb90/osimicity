@@ -167,3 +167,6 @@ $('.team-slider').slick({
     //hide the preloader
     document.querySelector("#preloader").style.display = "none";
 }
+$(window).on("load", function(){
+  $("#preloader").fadeOut("slow");
+});
