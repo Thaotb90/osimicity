@@ -124,7 +124,7 @@ li.active .menu-link {
       position: relative;
       img {
         max-height: 45px;
-        filter: invert(1) drop-shadow(0 0 10px rgb(255, 255, 255));
+        filter: invert(0.2);
       }
       .animation-play-now{
         position: absolute;
