@@ -163,10 +163,7 @@ $('.team-slider').slick({
   });
 
 
-  window.onload = function(){
-    //hide the preloader
-    document.querySelector("#preloader").style.display = "none";
-}
+
 $(window).on("load", function(){
-  $("#preloader").fadeOut("slow");
+  $(".loader-wrapper").fadeOut("slow");
 });
