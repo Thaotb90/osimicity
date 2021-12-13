@@ -47,6 +47,7 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   background-color: black;
+  position: relative;
 }
 
 input,
@@ -136,6 +137,14 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+body .bg-global {
+  background-image: url(../images/bg.svg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -101;
 }
 
 /*++++++++++++++ Header +++++++++++++++*/
@@ -365,13 +374,15 @@ img {
   clip: auto;
   z-index: 0;
   color: gold;
+  left: 26px;
+  text-shadow: -2px 0 #ff00c1;
 }
 
 .section-heading .wrapper-animation:after {
   content: attr(data-innertext);
   position: absolute;
   top: 0;
-  left: 0;
+  left: 26px;
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -379,6 +390,7 @@ img {
   clip: rect(0, 95px, 700px, 40px);
   transform: translate3d(-20px, 0, 0);
   animation: glitch-anim-alt-1-vertical 1.75s linear infinite alternate;
+  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
 }
 
 @media screen and (max-width: 1023px) {
@@ -1579,6 +1591,7 @@ li.active .menu-link {
   justify-content: center;
   margin: 0;
   padding: 0;
+  z-index: 199;
 }
 .select-lang .menu-lang li {
   display: block;
@@ -1791,9 +1804,6 @@ li.active .menu-link {
 .intro {
   padding: 0;
   position: relative;
-  background-image: url(../images/bg-section/osimi-bg-section-hero.jpg);
-  background-position: bottom;
-  z-index: 1;
 }
 .intro .bg-overlay {
   position: absolute;
@@ -1943,9 +1953,6 @@ li.active .menu-link {
   }
 }
 .intro-videos {
-  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat;
-  background-size: contain;
   position: relative;
   z-index: 1;
 }
@@ -1998,7 +2005,7 @@ li.active .menu-link {
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 9;
 }
 .intro-videos .video-right .content-videos .video-earth video {
   width: 100%;
@@ -2090,6 +2097,17 @@ li.active .menu-link {
   border-radius: 4px;
 }
 
+.intro-videos .video-right .bg-video:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 999999;
+}
+
 .intro-videos .container-fluid {
   position: relative;
   z-index: 3;
@@ -2153,6 +2171,13 @@ li.active .menu-link {
     font-size: 70px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .intro-videos .video-right {
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .intro-videos .section-heading .section-title {
     font-size: 60px;
@@ -2177,11 +2202,6 @@ li.active .menu-link {
 
   .intro-videos .col-lg-6:first-child {
     margin-bottom: 50px;
-  }
-
-  .intro-videos .video-right {
-    max-width: 650px;
-    margin: auto;
   }
 }
 @media screen and (max-width: 580px) {
@@ -2296,7 +2316,7 @@ li.active .menu-link {
   top: 52%;
 }
 .class-character .character-list .list-item .boxed-content .desc-character {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: normal;
 }
 .class-character .character-list .list-item .boxed-content .desc-character p {
@@ -2572,11 +2592,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .features {
-  background-image: url(../images/bg-section/bg-section-features.jpg);
-  background-size: cover;
-  background-position: center;
   padding-top: 60px;
-  background-repeat: repeat-x;
 }
 .features .text-orange {
   color: #E5650E;
@@ -2734,11 +2750,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .economics {
-  background-image: url(../images/bg-section/bg-section-economic.jpg);
-  background-size: cover;
-  background-position: center;
   padding-top: 60px;
-  background-repeat: repeat-x;
 }
 .economics .grid-box {
   display: grid;
@@ -2893,13 +2905,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .roadmap {
-  background-image: url(../images/bg-section/bg-section-roadmap.jpg);
-  position: relative;
-  background-position: center;
   z-index: 1;
   padding-bottom: 600px;
-  background-repeat: repeat-x;
-  background-size: cover;
+  position: relative;
   padding-top: 60px;
 }
 .roadmap .section-heading {
@@ -2953,6 +2961,17 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 .roadmap .content-rm .flex-row-two .content .text-re {
   font-family: "AquireRegular";
+}
+
+.roadmap:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #ff66003f, transparent);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .roadmap .bg-bottom-roadmap {
@@ -3322,10 +3341,6 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .token#token {
-  background-image: url(../images/bg-section/bg-section-allocation.jpg);
-  background-repeat: repeat-x;
-  background-position: center;
-  background-size: cover;
   position: relative;
   z-index: 1;
   padding-top: 60px;
@@ -3529,10 +3544,6 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .metric {
-  background-image: url(../images/bg-section/bg-section-metric.jpg);
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: center;
   padding-bottom: 80px;
 }
 
@@ -3993,10 +4004,6 @@ ul.character-socials a:hover:after {
   }
 }
 .teams {
-  background-image: url(../images/bg-section/bg-section-teams.jpg);
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: center;
   padding: 60px 0;
 }
 .teams .team-slider .team {
@@ -4100,10 +4107,6 @@ ul.character-socials a:hover:after {
 }
 footer.footer {
   padding: 75px 0;
-  background-image: url(../images/bg-section/bg-footer.jpg);
-  background-position: left;
-  background-size: auto;
-  background-repeat: repeat;
   position: relative;
   z-index: 1;
 }
@@ -4166,7 +4169,7 @@ footer.footer:after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
   z-index: 0;
   top: 0;
   left: 0;
