@@ -2,23 +2,31 @@
 padding-top: 60px;
     .grid-box{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 60px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 60px;
+        text-align: center;
         .grid-item{
             .boxed-img{
                 transition: 0.15s all;
                 margin-bottom: 0;
             }
             .grid-content{
-                padding:  20px;
-                position: relative;
+              padding: 20px 40px;
+              position: relative;
+              max-width: 500px;
+              margin: auto;
                 .title-item{
                     color: $primary-color;
                     text-transform: uppercase;
-                    font-size: 20px;
+                    font-size: 22px;
                     margin-bottom: 20px;
                     position: relative;
                     z-index: 1;
+                }
+                .desc-item {
+                  font-family:'AquireRegular';
+                  font-size: 16px;
                 }
             }
             .grid-content:after{
@@ -29,9 +37,12 @@ padding-top: 60px;
               top: 0;
               left: 0;
               background-image: url(../images/features/bg-overlay-item-features.png);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
               opacity: 0;
               visibility: hidden;
-              filter: brightness(0.6);
+              filter: hue-rotate(100deg);
               z-index: 0;
             }
             .grid-content::before{
@@ -39,16 +50,16 @@ padding-top: 60px;
               position: absolute;
               width: 100%;
               height: 100%;
-              top: 30%;
-              left: 30%;
+              top: 0;
+              left: 50%;
               background-image: url(../images/features/electric-red.png);
               opacity: 0;
               visibility: hidden;
               background-size: cover;
               background-position: center;
               transform: translate(-50%, -50%);
-              z-index: 0;
-            
+              background-repeat: no-repeat;
+            z-index: 1;
             }
         }
         .grid-item:hover .title-item {
@@ -70,6 +81,8 @@ padding-top: 60px;
       opacity: 0.3;
       visibility: visible;
       animation: glitch-text .05s steps(2) 10 alternate forwards,glitch-blink .1s steps(1) 2;
+      filter: hue-rotate(100deg);
+
 
     }
 .economics .grid-item:hover {
@@ -108,11 +121,12 @@ padding-top: 60px;
 .economics .grid-box {
     grid-gap:25px ;
     grid-template-columns: 1fr 1fr;
-    .grid-item:last-child {
-      width: 100%;
-      position: relative;
-      left: 50%;
-    }
+    grid-template-rows: 1fr 1fr;
+    // .grid-item:last-child {
+    //   width: 100%;
+    //   position: relative;
+    //   left: 50%;
+    // }
   }
   .economics .grid-box .grid-item .grid-content .title-item {
     font-size: 22px;

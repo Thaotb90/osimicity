@@ -1795,6 +1795,10 @@ li.active .menu-link {
   }
 }
 .intro {
+  background-image: url(../images/bg-section/bg-hero-mobile.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   padding: 0;
   position: relative;
 }
@@ -1813,6 +1817,9 @@ li.active .menu-link {
   object-fit: cover;
   opacity: 1;
   transition: 0.25s ease-in-out;
+}
+.intro .video-intro {
+  height: 100vh;
 }
 .intro .video-intro video#myVideo {
   width: 100%;
@@ -1857,7 +1864,7 @@ li.active .menu-link {
   width: 100%;
   height: 100%;
   max-height: 250px;
-  bottom: 0;
+  bottom: -100px;
   background-image: url(../images/bg-section/bg-bottom-intro.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1947,7 +1954,8 @@ li.active .menu-link {
 }
 .intro-videos {
   position: relative;
-  z-index: 1;
+  z-index: 11;
+  padding-top: 50px;
 }
 .intro-videos .section-heading .section-title {
   line-height: 1;
@@ -2186,7 +2194,7 @@ li.active .menu-link {
 }
 @media screen and (max-width: 991px) {
   .intro-videos {
-    padding-top: 0;
+    padding-top: 40px;
   }
 
   .intro-videos .section-heading {
@@ -2238,7 +2246,7 @@ li.active .menu-link {
   }
 }
 .class-character {
-  padding: 0;
+  padding: 50px 0;
 }
 .class-character .character-list .list-item {
   position: relative;
@@ -2719,6 +2727,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   font-size: 16px;
   position: relative;
   z-index: 1;
+  font-family: "AquireRegular";
 }
 .features .grid-box .feature-item .content-text:after {
   content: "";
@@ -2728,6 +2737,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   top: 0;
   left: 0;
   background-image: url(../images/features/bg-overlay-item-features.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   opacity: 0;
   visibility: hidden;
   filter: brightness(0.6);
@@ -2830,24 +2842,32 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 .economics .grid-box {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 60px;
+  text-align: center;
 }
 .economics .grid-box .grid-item .boxed-img {
   transition: 0.15s all;
   margin-bottom: 0;
 }
 .economics .grid-box .grid-item .grid-content {
-  padding: 20px;
+  padding: 20px 40px;
   position: relative;
+  max-width: 500px;
+  margin: auto;
 }
 .economics .grid-box .grid-item .grid-content .title-item {
   color: #E5650E;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
+}
+.economics .grid-box .grid-item .grid-content .desc-item {
+  font-family: "AquireRegular";
+  font-size: 16px;
 }
 .economics .grid-box .grid-item .grid-content:after {
   content: "";
@@ -2857,9 +2877,12 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   top: 0;
   left: 0;
   background-image: url(../images/features/bg-overlay-item-features.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   opacity: 0;
   visibility: hidden;
-  filter: brightness(0.6);
+  filter: hue-rotate(100deg);
   z-index: 0;
 }
 .economics .grid-box .grid-item .grid-content::before {
@@ -2867,15 +2890,16 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 30%;
-  left: 30%;
+  top: 0;
+  left: 50%;
   background-image: url(../images/features/electric-red.png);
   opacity: 0;
   visibility: hidden;
   background-size: cover;
   background-position: center;
   transform: translate(-50%, -50%);
-  z-index: 0;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 .economics .grid-box .grid-item:hover .title-item {
   color: red;
@@ -2896,6 +2920,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   opacity: 0.3;
   visibility: visible;
   animation: glitch-text 0.05s steps(2) 10 alternate forwards, glitch-blink 0.1s steps(1) 2;
+  filter: hue-rotate(100deg);
 }
 
 .economics .grid-item:hover .boxed-img {
@@ -2934,11 +2959,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   .economics .grid-box {
     grid-gap: 25px;
     grid-template-columns: 1fr 1fr;
-  }
-  .economics .grid-box .grid-item:last-child {
-    width: 100%;
-    position: relative;
-    left: 50%;
+    grid-template-rows: 1fr 1fr;
   }
 
   .economics .grid-box .grid-item .grid-content .title-item {
@@ -2995,6 +3016,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 60px 0;
+  overflow: hidden;
 }
 .roadmap .content-rm .flex-row-one .flex-item {
   text-align: center;
@@ -3016,6 +3039,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 60px 0;
+  overflow: hidden;
 }
 .roadmap .content-rm .flex-row-two .flex-item {
   position: relative;
@@ -3061,6 +3086,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   background-size: contain;
   background-position: bottom;
   z-index: 0;
+  filter: drop-shadow(2px 2px 7px rgba(212, 152, 39, 0.568));
 }
 
 .roadmap .container-fluid {
@@ -3107,6 +3133,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    padding: 0;
+    overflow: unset;
   }
   .roadmap .content-rm .flex-row-one .flex-item,
 .roadmap .content-rm .flex-row-two .flex-item {
@@ -3464,9 +3492,10 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   font-weight: normal;
   text-align: center;
   border-image-slice: 1;
-  border-image-source: linear-gradient(180deg, #faea75, #c07205);
+  border-image-source: linear-gradient(180deg, #c85ed4, #ae00ff);
   border-width: 2px;
   border-style: solid;
+  background: black;
 }
 .token .token-info-content tbody tr {
   height: 45px;
@@ -3494,7 +3523,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 .token .token-info-content tfoot tr th {
   padding: 15px 0;
-  color: white;
+  color: red;
   border-radius: 10px;
 }
 
@@ -3585,8 +3614,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 
   .token .token-info-content tfoot tr th {
     padding: 15px 0;
-    color: white;
-    font-size: 14px;
+    color: red;
+    font-size: 12px;
   }
 
   .token .intruction-item span {
@@ -3663,13 +3692,41 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   margin-bottom: 85px;
 }
 
+@media screen and (max-width: 680px) {
+  .token table.table-metric {
+    border-spacing: 5px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .token table.table-metric {
+    border-spacing: 5px;
+  }
+
+  .token .token-info-content tbody tr td {
+    padding: 3px;
+    font-size: 10px;
+  }
+}
 @media screen and (max-width: 480px) {
+  .token-table {
+    border-radius: 0;
+  }
+
+  .token .token-info-content .table-metric {
+    margin-bottom: 5px;
+  }
+
   .token table.table-metric {
     border-spacing: 5px;
   }
 
   .token table.table-metric thead th {
-    font-size: 12px;
+    font-size: 10px;
+    border: none;
+    color: #E5650E;
+    font-weight: bold;
+    line-height: 1.2;
+    background-color: inherit;
   }
 
   .token .token-info-content tbody tr td {
@@ -3680,17 +3737,26 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   .token .token-info-content tbody tr td {
     padding: 5px;
     font-size: 10px;
+    border-radius: 2px;
+    font-family: "Oxanium", cursive;
+    text-transform: initial;
+    font-weight: normal;
   }
 
   .token table.table-metric thead th {
-    padding: 5px;
-    font-size: 12px;
+    padding: 2px;
+    font-size: 10px;
+    border: none;
+    color: #E5650E;
+    line-height: 15px;
+    font-weight: bold;
   }
 
   .token .token-info-content tfoot tr th {
     padding: 10px 0;
-    color: white;
-    font-size: 12px;
+    color: red;
+    font-size: 10px;
+    border-radius: 3px;
   }
 
   section#roadmap {
@@ -4160,6 +4226,18 @@ ul.character-socials a:hover:after {
   }
 }
 @media screen and (max-width: 375px) {
+  .teams .team-slider .team {
+    margin: 10px;
+  }
+
+  .teams img.a-left.control-c.prev.slick-prev.slick-arrow {
+    left: 10px;
+  }
+
+  .teams .team-slider img.a-right.control-c.next.slick-next.slick-arrow {
+    right: 10px;
+  }
+
   .teams .team-slider .team .boxed-img {
     width: 160px;
     height: 160px;

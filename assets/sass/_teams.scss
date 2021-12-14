@@ -76,8 +76,18 @@
   .teams {
     padding: 70px 0 40px 0;
   }
+
 }
 @media screen and (max-width: 375px) {
+  .teams .team-slider .team {
+    margin: 10px;
+}
+.teams img.a-left.control-c.prev.slick-prev.slick-arrow {
+  left: 10px;
+}
+.teams .team-slider img.a-right.control-c.next.slick-next.slick-arrow {
+  right: 10px;
+}
   .teams .team-slider .team .boxed-img {
     width: 160px;
     height: 160px;

@@ -34,12 +34,38 @@ transition: 0.25s ease;
 #token .section-heading {
   margin-bottom: 85px;
 }
+@media screen and (max-width: 680px) {
+  .token table.table-metric {
+    border-spacing: 5px;
+}
+}
+@media screen and (max-width: 540px) {
+  .token table.table-metric {
+    border-spacing: 5px;
+}
+.token .token-info-content tbody tr td {
+  padding: 3px;
+  font-size: 10px;
+}
+}
+
 @media screen and (max-width: 480px) {
+  .token-table{
+    border-radius: 0;
+  }
+  .token .token-info-content .table-metric {
+    margin-bottom: 5px;
+}
   .token table.table-metric {
     border-spacing: 5px;
   }
   .token table.table-metric thead th {
-    font-size: 12px;
+    font-size: 10px;
+    border: none;
+    color: $primary-color;
+    font-weight: bold;
+    line-height: 1.2;
+    background-color: inherit;
   }
   .token .token-info-content tbody tr td {
     padding: 5px;
@@ -50,15 +76,25 @@ transition: 0.25s ease;
   .token .token-info-content tbody tr td {
     padding: 5px;
     font-size: 10px;
+    border-radius: 2px;
+    font-family: "Oxanium", cursive;
+    text-transform: initial;
+    font-weight: normal;
   }
   .token table.table-metric thead th {
-    padding: 5px;
-    font-size: 12px;
+    padding: 2px;
+    font-size: 10px;
+    border: none;
+    color: $primary-color;
+    line-height: 15px;
+    font-weight: bold;
+    
   }
   .token .token-info-content tfoot tr th {
     padding: 10px 0;
-    color: white;
-    font-size: 12px;
+    color: red;
+    font-size: 10px;
+    border-radius: 3px;
   }
   section#roadmap {
     padding-top: 60px;

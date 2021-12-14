@@ -47,9 +47,11 @@
     font-weight: normal;
     text-align: center;
     border-image-slice: 1;
-    border-image-source: linear-gradient(180deg, #faea75, #c07205);
+    border-image-source: linear-gradient(
+180deg, #c85ed4, #ae00ff);
     border-width: 2px;
     border-style: solid;
+    background: black;
   }
   .token-info-content tbody tr {
     height: 45px;
@@ -71,13 +73,14 @@
   }
   .token-info-content tfoot tr {
     background: #1d1d1e;
+    
   }
   .table-metric tfoot tr th:not(last-child) {
     text-align: center;
   }
   .token-info-content tfoot tr th {
     padding: 15px 0;
-    color: white;
+    color: red;
     border-radius: 10px;
   }
 }
@@ -161,8 +164,8 @@
   }
   .token .token-info-content tfoot tr th {
     padding: 15px 0;
-    color: white;
-    font-size: 14px;
+    color: red;
+    font-size: 12px;
   }
   .token .intruction-item span {
     font-size: 16px;
