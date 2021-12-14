@@ -151,9 +151,6 @@ $('.team-slider').slick({
     ]
   });
  
-  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-    target: '#navbar-scrollspy'
-  })
 
 
   AOS.init({
