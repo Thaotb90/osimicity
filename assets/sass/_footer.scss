@@ -262,10 +262,10 @@ footer .menu-socials .tele-hover:after {
     display: none;
   }
   footer {
-    border-image-slice: 1;
-    border-image-source: linear-gradient(180deg, #9000f84f, #e5640ea8);
+    border-color: transparent;
+    box-shadow: 0 0 10px wheat, inset 0 0 10px wheat;
     border-width: 8px;
-    border-style: solid;
+    border-style: dashed;
   }
 }
 @media screen and (max-width: 1025px) {

@@ -341,8 +341,8 @@ min-width: 100px;
       padding-left: 0;
       padding-right: 0;
   }
-  .menu-primary.is-active .menu-item {
-    margin: 0;
+  .menu-primary .menu-item {
+    margin: 0 !important;
 }
   .menu-close.is-active{
   opacity: 1;
