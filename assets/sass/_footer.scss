@@ -5,9 +5,13 @@ footer.footer {
   .footer-brand {
     .boxed-img {
       margin-bottom: 20px;
+      overflow: unset;
       img {
       }
     }
+  }
+  .footer-brand:hover img{
+      filter: drop-shadow(1px 1px 0px white);
   }
   .block-footer-info {
     .info-company {
@@ -36,7 +40,9 @@ footer.footer {
         display: block;
       }
       a:hover {
-        color: $primary-color;
+        background: linear-gradient(30deg, #fdbe04, #ff4137);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
       }
     }
   }

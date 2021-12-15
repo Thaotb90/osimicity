@@ -335,6 +335,8 @@ body .bg-global {
   top: -15px;
   left: -15px;
   box-shadow: 0 75px 0 0 white;
+  transition: 0.25s ease;
+  filter: drop-shadow(-2px -2px 20px orange);
 }
 
 .bg-second-large:after {
@@ -346,6 +348,16 @@ body .bg-global {
   top: -15px;
   right: -15px;
   box-shadow: 0 75px 0 0 white;
+  transition: 0.25s ease;
+  filter: drop-shadow(2px -2px 20px orange);
+}
+
+.bg-second-large:hover::after {
+  filter: drop-shadow(2px -2px 0 orange);
+}
+
+.bg-second-large:hover::before {
+  filter: drop-shadow(-2px -2px 0 orange);
 }
 
 .text-orange {
@@ -2269,7 +2281,7 @@ li.active .menu-link {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
 .class-character .character-list .list-item .boxed-content {
@@ -2720,12 +2732,14 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 .features .grid-box .feature-item .content-text .title-item {
   font-size: 22px;
-  color: #E5650E;
   margin-bottom: 20px;
   text-transform: uppercase;
   line-height: 28px;
   position: relative;
   z-index: 1;
+  background: linear-gradient(357deg, #fdbe04, #ff4137);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .features .grid-box .feature-item .content-text .desc-item {
   text-transform: uppercase;
@@ -2741,7 +2755,6 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(../images/features/bg-overlay-item-features.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2755,13 +2768,14 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 30%;
+  top: 35%;
+  left: 50%;
   background-image: url(../images/features/electric.png);
   opacity: 0;
   visibility: hidden;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transform: translate(-50%, -50%);
   z-index: 0;
 }
@@ -2869,6 +2883,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
+  background: linear-gradient(0deg, #fdbe04, #ff4137);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .economics .grid-box .grid-item .grid-content .desc-item {
   font-family: "AquireRegular";
@@ -2881,7 +2898,6 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(../images/features/bg-overlay-item-features.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2900,7 +2916,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   background-image: url(../images/features/electric-red.png);
   opacity: 0;
   visibility: hidden;
-  background-size: cover;
+  background-size: inherit;
   background-position: center;
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
@@ -3036,6 +3052,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 .roadmap .content-rm .flex-row-one .content .text-bold {
   font-family: "AquireBold";
+  background: linear-gradient(30deg, #fdbe04, #ff4137);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .roadmap .content-rm .flex-row-one .content .text-re {
   font-family: "AquireRegular";
@@ -3064,6 +3083,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 .roadmap .content-rm .flex-row-two .content .text-bold {
   font-family: "AquireBold";
+  background: linear-gradient(30deg, #fdbe04, #ff4137);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .roadmap .content-rm .flex-row-two .content .text-re {
   font-family: "AquireRegular";
@@ -3497,7 +3519,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   font-weight: normal;
   text-align: center;
   border-image-slice: 1;
-  border-image-source: linear-gradient(180deg, #c85ed4, #ae00ff);
+  border-image-source: -webkit-linear-gradient(top, #efff00, #ff9100);
   border-width: 2px;
   border-style: solid;
   background: black;
@@ -4167,6 +4189,9 @@ ul.character-socials a:hover:after {
   padding: 30px 0;
   box-shadow: 0 0 30px -10px #E5650E;
   margin: 30px;
+  background: -webkit-linear-gradient(#ff00d4, #ff9100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .teams .team-slider .team .boxed-img {
   width: 200px;
@@ -4280,6 +4305,10 @@ footer.footer {
 }
 footer.footer .footer-brand .boxed-img {
   margin-bottom: 20px;
+  overflow: unset;
+}
+footer.footer .footer-brand:hover img {
+  filter: drop-shadow(1px 1px 0px white);
 }
 footer.footer .block-footer-info .info-company {
   text-align: left;
@@ -4308,7 +4337,9 @@ footer.footer ul li a {
   display: block;
 }
 footer.footer ul li a:hover {
-  color: #E5650E;
+  background: linear-gradient(30deg, #fdbe04, #ff4137);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 footer.footer .footer-item {
   text-align: left;

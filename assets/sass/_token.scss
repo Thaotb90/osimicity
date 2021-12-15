@@ -47,8 +47,7 @@
     font-weight: normal;
     text-align: center;
     border-image-slice: 1;
-    border-image-source: linear-gradient(
-180deg, #c85ed4, #ae00ff);
+    border-image-source: -webkit-linear-gradient(top, rgb(239 255 0), rgb(255, 145, 0));
     border-width: 2px;
     border-style: solid;
     background: black;

@@ -32,6 +32,9 @@
         }
         .text-bold {
           font-family: "AquireBold";
+          background: linear-gradient(30deg, #fdbe04, #ff4137);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         .text-re {
           font-family: "AquireRegular";
@@ -60,6 +63,9 @@
         }
         .text-bold {
           font-family: "AquireBold";
+          background: linear-gradient(30deg, #fdbe04, #ff4137);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         .text-re {
           font-family: "AquireRegular";

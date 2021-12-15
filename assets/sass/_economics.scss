@@ -23,6 +23,9 @@ padding-top: 60px;
                     margin-bottom: 20px;
                     position: relative;
                     z-index: 1;
+                    background: linear-gradient(0deg, #fdbe04, #ff4137);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
                 }
                 .desc-item {
                   font-family:'AquireRegular';
@@ -36,7 +39,7 @@ padding-top: 60px;
               height: 100%;
               top: 0;
               left: 0;
-              background-image: url(../images/features/bg-overlay-item-features.png);
+              // background-image: url(../images/features/bg-overlay-item-features.png);
               background-repeat: no-repeat;
               background-position: center;
               background-size: cover;
@@ -55,7 +58,7 @@ padding-top: 60px;
               background-image: url(../images/features/electric-red.png);
               opacity: 0;
               visibility: hidden;
-              background-size: cover;
+              background-size: inherit;
               background-position: center;
               transform: translate(-50%, -50%);
               background-repeat: no-repeat;
