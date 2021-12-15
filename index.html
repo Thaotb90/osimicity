@@ -27,10 +27,10 @@
     <!-- AOS library -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css?v=1" /> -->
 
-    <link rel="stylesheet" href="./assets/css/main.css?v=39"/>
+    <link rel="stylesheet" href="./assets/css/main.css?v=40"/>
 
     <link rel="stylesheet" href="./assets/vendor/animate/animate.css" />
-    <link rel="stylesheet" href="./assets/css/loader.css?v=13">
+    <link rel="stylesheet" href="./assets/css/loader.css?v=14">
   </head>
 
   <body>
@@ -38,7 +38,8 @@
     </div>
     <!-- Preloader  -->
     <div class="loader-wrapper">
-     <span class="loader"><span class="loader-inner"></span></span>
+      <div class="boxed-img"><img src="./assets/images/logo214x55x2.png" alt=""></div>
+     <p class="loader"><span class="loader-inner"></span></p>
     </div>
     
     <header class="header" id="header" >
@@ -71,7 +72,7 @@
                 <a href="#teams" class="menu-link">Teams</a>
               </li>
               <div class="group-control">
-                <a href="#!" class="play-now">
+                <a href="#!" data-bs-toggle="modal" data-bs-target="#modal_playnow" class="play-now">
                   <div class="boxed-img">
                     <img src="./assets/images/btn-playnow.png" alt="">
                   </div>
@@ -90,7 +91,7 @@
               </div>
             </ul>
             <div class="header-right">
-              <a href="#!" class="play-now">
+              <a href="#!" data-bs-toggle="modal" data-bs-target="#modal_playnow" class="play-now">
                 <div class="boxed-img">
                   <img src="./assets/images/btn-playnow.png" alt="">
                   <span class="animation-play-now"></span>
@@ -811,7 +812,7 @@
             <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 footer-item text-center">
               <h4 class="title-list-footer">About Us</h4>
               <ul class="footer-menu">
-                <li class="menu-item"><a href="#!"><span>download</span></a></li>
+                <li class="menu-item"><a href="#!" data-bs-toggle="modal" data-bs-target="#modal_playnow"><span>download</span></a></li>
                 <li class="menu-item"><a href="#features"><span>features</span></a></li>
                 <li class="menu-item"><a href="#token"><span>tokennomic</span></a></li>
                 <li class="menu-item"><a href="#teams"><span>team</span></a></li>
@@ -891,6 +892,113 @@
             </div>
       </main>
 
+      <!-- Popup Playnow -->
+      <div class="modal fade" id="modal_playnow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="box-img-popup"> <img src="./assets/images/logo.png" alt=""> </div>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <h3 class="title-request">
+            System Requirements
+          </h3>
+          <p class="sub-title-request text-center">Available now on Microsoft Windows only. MAC operating system version will soon be released</p>
+              <div class="content-body">
+                <div class="content-body-left"> <span class="title-content-body">Minimum</span>
+                  <ul class="list-request">
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>OS</p>
+                      </div>
+                      <div class="info">
+                        <p>Windows 7 and later</p>
+                      </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>Processor</p>
+                      </div>
+                      <div class="info"> Intel Core i3 </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>Graphics</p>
+                      </div>
+                      <div class="info"> Intel / AMD Radeon / Nvidia GeForce </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>Memory</p>
+                      </div>
+                      <div class="info"> 4GB RAM </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>DirectX</p>
+                      </div>
+                      <div class="info"> Version 11 </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>Storage</p>
+                      </div>
+                      <div class="info"> 1.5 GB </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-body-right"> <span class="title-content-body">Recommended</span>
+                  <ul class="list-request">
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>OS</p>
+                      </div>
+                      <div class="info">
+                        <p>Windows 7 and later</p>
+                      </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>Processor</p>
+                      </div>
+                      <div class="info"> Intel Core i5 </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>Graphics</p>
+                      </div>
+                      <div class="info"> Intel / AMD Radeon / Nvidia GeForce </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>Memory</p>
+                      </div>
+                      <div class="info"> 8GB RAM </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>DirectX</p>
+                      </div>
+                      <div class="info"> Version 11 </div>
+                    </li>
+                    <li class="list-item">
+                      <div class="hardware">
+                        <p>Storage</p>
+                      </div>
+                      <div class="info"> 1.5 GB </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" target="_blank" class="download-now-btn btn btn-outline-primary">Download now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Popup Playnow -->
     <!--JS files Core-->
     <script src="./assets/js/jquery.js"></script>
     <script

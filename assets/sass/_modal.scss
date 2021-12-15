@@ -1,0 +1,109 @@
+#modal_playnow{
+    .modal-dialog {
+        justify-content: center;
+        .modal-content{
+        background-image: url(/assets/images/bg-section/bg_popup_playnow.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        min-width: 600px;
+        box-shadow: 0 0 20px #802d17;
+        }
+        .modal-header{
+            border:none;
+            .box-img-popup img{
+                max-height: 35px;
+                object-fit: cover;
+            }
+            .close{
+                font-size: 40px;
+                border: none;
+                background-color: transparent;
+                color: white;
+                position: absolute;
+                top: -45px;
+                right: 0;
+            }
+        }
+        .modal-body{
+            // background-color: #000000a6;
+            .title-request{
+                text-align: center;
+                margin: 20px 0;
+                text-shadow: 2px 2px 0px black;
+            }
+            .sub-title-request{
+                text-shadow: 2px 2px 0 black;
+                filter: drop-shadow(0 0 5px black);
+                width: 100%;
+                max-width: 400px;
+                margin: 20px auto;
+            }
+            .content-body{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .content-body-left{
+                    .title-content-body {
+                        display: block;
+                        text-align: center;
+                        font-size: 16px;
+                        color: $primary-color;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                    }
+                    .hardware{
+                        background: linear-gradient(180deg, gold, #ff0000);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: normal;
+                        
+                    }
+                    .info{
+                        font-size: 14px;
+                        text-shadow: 0 0 1px black;
+                    }
+                }
+                .content-body-right{
+                    .title-content-body {
+                        display: block;
+                        text-align: center;
+                        font-size: 16px;
+                        color: $primary-color;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                    }
+                
+                    .hardware{
+                        background: linear-gradient(180deg, gold, #ff0000);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    .info{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .modal-footer{
+            border: none;
+          justify-content: center;
+          .download-now-btn{
+              padding: 12px 20px;
+              height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+    line-height: 0;
+          }
+        }
+    }
+}
+@media screen and (max-width: 1023px) {
+#modal_playnow .modal-dialog .modal-content {
+    min-width: unset;
+}
+}
