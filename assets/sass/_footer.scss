@@ -87,9 +87,14 @@ footer.footer:after {
   right: 0px;
   bottom: 60px;
   z-index: 999;
+  img{
+    width: 45px;
+    padding: 10px;
+    transform: rotate(-90deg);
+  }
 }
 .scroll-up a.page-scroll {
-  padding: 10px 20px;
+  padding: 10px 0 10px 5px;
   background: #000;
   color: white;
   transition: 0.3s ease;

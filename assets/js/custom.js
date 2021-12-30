@@ -120,6 +120,19 @@ $('.character-list').slick({
     speed: 1000,
   fade: true,
   cssEase: 'linear',
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/images/character/prev.png'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='./assets/images/character/next.png'>"
+  });
+$('.story .story-list').slick({
+    dots: true,
+    arrows:false,
+    infinite: false,
+    speed: 500,
+    pauseOnHover: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  fade: true,
+  cssEase: 'linear',
     prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/images/character/chevron-back-outline.svg'>",
     nextArrow:"<img class='a-right control-c next slick-next' src='./assets/images/character/chevron-forward-outline.svg'>"
   });
@@ -131,8 +144,8 @@ $('.team-slider').slick({
     autoplaySpeed: 3000,
     slidesToShow: 3,
     slidesToScroll: 2,
-    prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/images/character/chevron-back-outline.svg'>",
-    nextArrow:"<img class='a-right control-c next slick-next' src='./assets/images/character/chevron-forward-outline.svg'>",
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/images/character/prev.png'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='./assets/images/character/next.png'>",
     responsive: [
         {
           breakpoint: 991,
@@ -164,3 +177,88 @@ $('.team-slider').slick({
 $(window).on("load", function(){
   $(".loader-wrapper").fadeOut("slow");
 });
+
+
+$(document).ready(function() {
+
+    
+    var $videoSrc;  
+    $('.video-btn').click(function() {
+        $videoSrc = $(this).data( "src" );
+    });
+    console.log($videoSrc);
+    
+      
+      
+    $('#videoabout').on('shown.bs.modal', function (e) {
+  
+    $("#frame_video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    })
+    $('#videoabout').on('hide.bs.modal', function (e) {
+        $("#frame_video").attr('src',$videoSrc); 
+    }) 
+    });
+
+    $(document).ready(function(){
+        $(".control-city-view").click(function(){
+            $(".content_item_show").removeClass("is-active");
+            $(".content-city-view").addClass("is-active");
+            $(".how_to_play .btn--close").addClass("is-active");
+        })
+        $(".how_to_play .btn--close").click(function(){
+            $((".content_item_show")).removeClass("is-active");
+            $(this).removeClass("is-active");
+        })
+        $(".control-race").click(function(){
+            $(".content_item_show").removeClass("is-active");
+            $(".content-race").addClass("is-active");
+            $(".how_to_play .btn--close").addClass("is-active");
+        })
+    })
+
+    $('.library-character .slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        asNavFor: '.slider-nav-thumbnails',
+    });
+   
+    $('.library-character .slider-nav-thumbnails').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider',
+        dots: false,
+        focusOnSelect: true,
+        prevArrow:"<div class=\"wrapper-icon icon-left\"><img class='a-left control-c prev slick-prev' src='./assets/images/character/prev.png'></div>",
+    nextArrow:"<div class=\"wrapper-icon icon-right\"><img class='a-right control-c next slick-next' src='./assets/images/character/next.png'></div>",
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+    ]
+    });
+   
+    // Remove active class from all thumbnail slides
+    $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+   
+    // Set active class to first thumbnail slides
+    $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
+   
+    // On before slide change match active thumbnail to current slide
+    $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        var mySlideNumber = nextSlide;
+        $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+        $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+   });
