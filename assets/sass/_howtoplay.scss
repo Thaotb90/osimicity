@@ -131,6 +131,16 @@ a.btn--close:hover, a.btn--close:hover::before {
         transform: translate(-50%,-50%);
         object-fit: contain;
     }
+    .character1{
+        transform: translate(-63%, -49%);
+        width: 90%;
+    }
+    .character2{
+        transform: translate(-50%, -41%);
+        filter: hue-rotate(
+            348deg) contrast(1.1);
+        width: 78%;
+    }
 }
 .content{
     position: absolute;
@@ -309,6 +319,13 @@ z-index: 100;
     .how_to_play .content_item_show .nav-tabs .nav-item .nav-link {
        padding: 0 5px;
     }
+    .how_to_play .box_overlay .character1 {
+        transform: translate(-63%, -45%);
+        width: 100%;
+    }
+    .how_to_play .box_overlay .character2 {
+        width: 90%;
+    }
 }
 @media screen and (max-width: 1280px) {
 
@@ -345,6 +362,13 @@ z-index: 100;
             width: 100%;
             height: 100%;
         
+    }
+    .how_to_play .box_overlay .character1 {
+        transform: translate(-63%, -45%);
+        width: 125%;
+    }
+    .how_to_play .box_overlay .character2 {
+        width: 120%;
     }
 }
 @media screen and ( max-width: 991px) {
@@ -432,6 +456,26 @@ z-index: 100;
         font-size: 15px;
         padding: 8px 15px;
     }
+    .how_to_play .box_overlay .character1 {
+        transform: translate(-100%, -45%);
+        width: 60%;
+        object-fit: cover;
+        object-position: top;
+        height: 100%;
+        min-height: 500px;
+    }
+    .how_to_play .box_overlay .character2 {
+        object-fit: cover;
+        object-position: 100% 14%;
+        width: 70%;
+    }
+    .background-race {
+        object-position: 100% 37%;
+    }
+    .how_to_play .content {
+        text-align: right;
+        padding-right: 25px;
+    }
 }
 @media screen and (max-width: 580px) {
     .how_to_play .content_item_show .nav-tabs {
@@ -486,7 +530,14 @@ z-index: 100;
     .how_to_play .content .title {
         font-size: 30px;
     }
-
+    .how_to_play .box_overlay .character1 {
+        transform: translate(-65%, -35%);
+        width: 80%;
+        object-fit: cover;
+        object-position: top;
+        height: 100%;
+        min-height: 500px;
+    }
 }
 .how_to_play .content_item_show .tab-content .box-img img {
     animation: animation-rotage 1s infinite alternate;;

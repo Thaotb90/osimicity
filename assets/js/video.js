@@ -6,33 +6,9 @@ $(document).ready(function(){
         isMobile = true;
     }
     if(!isMobile){
-        var videoFile = './assets/videos/video_intro_demo1.mp4';
+        var videoFile = './assets/videos/video_background.mp4';
         $('video#myVideo source').attr('src', videoFile);
         $("video#myVideo")[0].load();
     }
     
-
-// })
-/*----------------------------------------------------*/
-	/*	Video Settings
-	/*----------------------------------------------------*/
-	// $( '.buttonbar' ).on( 'click', '.play', function()
-	// {
-	// 	var video = $( '.video-earth video' ),
-	// 		button = $( '.play' );
-	// 	if( video[ 0 ].paused )
-	// 	{
-	// 		video[ 0 ].play();
-	// 		$( this ).addClass( 'pause-show' );
-	// 		$( this ).removeClass( 'play-show' );
-	// 	}
-	// 	else
-	// 	{
-	// 		video[ 0 ].pause();
-	// 		$( this ).addClass( 'play-show' );
-	// 		$( this ).removeClass( 'pause-show' );
-	// 	}
-	// 	$('.bg-video').addClass('hidden-bg');
-	// } );
-	
 })

@@ -91,6 +91,9 @@ transform: scale(1.02);
 .intro .content-intro {
   text-align: center;
 }
+.intro {
+  height: 80vh;
+}
 }
 @media screen and (max-width: 520px) {
   .intro .content-intro .title-primary {
