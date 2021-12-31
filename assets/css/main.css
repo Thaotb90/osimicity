@@ -3030,8 +3030,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   object-fit: contain;
 }
 .how_to_play .box_overlay .character1 {
-  transform: translate(-63%, -49%);
-  width: 90%;
+  transform: translate(-55%, -42%);
+  width: 80%;
 }
 .how_to_play .box_overlay .character2 {
   transform: translate(-50%, -41%);
@@ -3258,8 +3258,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 
   .how_to_play .box_overlay .character1 {
-    transform: translate(-63%, -45%);
-    width: 125%;
+    transform: translate(-55%, -43%);
+    width: 110%;
   }
 
   .how_to_play .box_overlay .character2 {
@@ -3370,7 +3370,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 
   .how_to_play .box_overlay .character1 {
-    transform: translate(-100%, -45%);
+    transform: translate(-100%, -35%);
     width: 60%;
     object-fit: cover;
     object-position: top;
