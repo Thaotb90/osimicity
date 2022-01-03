@@ -39,11 +39,11 @@ function isScrolledIntoView(elem) {
 }
 
 $(window).scroll(function() {
-    $('.section-heading .section-title, .section-heading .section-desc').each(function() {
-        if (isScrolledIntoView(this) === true) {
-            $(this).addClass('animated fadeInUp')
-        }
-    });
+    // $('.section-heading .section-title, .section-heading .section-desc').each(function() {
+    //     if (isScrolledIntoView(this) === true) {
+    //         $(this).addClass('animated fadeInUp')
+    //     }
+    // });
     $('.section-heading .boxed-img').each(function() {
         if (isScrolledIntoView(this) === true) {
             $(this).addClass('animated zoomIn')
