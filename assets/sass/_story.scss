@@ -118,6 +118,11 @@
     transform: translateY(0);
     opacity: 1;
 }
+@media screen and (max-width: 1400px){
+    .story .slick-slider .slick-slide .boxed-content .title-item-big {
+        font-size: 60px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .story .slick-slider .slick-slide .boxed-content{
         position: relative;
@@ -138,9 +143,6 @@
         .story-part{
             order: 2;
         }
-    }
-    .story .slick-slider .slick-slide .boxed-content .title-item-big{
-        font-size: 65px;
     }
     .story .slick-slider .slick-slide .boxed-content .story-part {
         font-size: 18px;

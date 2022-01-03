@@ -167,7 +167,7 @@ a.btn--close:hover, a.btn--close:hover::before {
         transform: translate(-50%, -41%) skew(7deg);
         filter: hue-rotate(
             348deg) contrast(1.1);
-        width: 78%;
+        width: 90%;
         z-index: 10;
     }
     .background{
@@ -335,6 +335,35 @@ a.btn--close:hover, a.btn--close:hover::before {
                 object-position: center;
             }
         }
+       
+        
+    }
+    
+}
+.content-race  .tab-pane:first-child{
+    .box-img{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: unset;
+        img{
+            object-fit: cover;
+        }
+    }
+}
+.content-fight  .tab-pane:first-child{
+    .box-img{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: unset;
+        img{
+            object-fit: cover;
+        }
     }
 }
 .how_to_play .content-city-view.is-active{
@@ -345,6 +374,9 @@ z-index: 100;
         transform: translateY(0);
 }
 .how_to_play .content-race.is-active{
+z-index: 100;
+}
+.how_to_play .content-fight.is-active{
 z-index: 100;
 }
 .how_to_play a.btn--close.is-active{
@@ -459,7 +491,7 @@ z-index: 100;
         left: unset;
     }
     .how_to_play .box_overlay .character2 {
-        transform: translate(-50%, -41%) skew(0deg);
+        transform: translate(-50%, -35%) skew(0deg);
         filter: hue-rotate(
     348deg) contrast(1.1);
         width: 100%;

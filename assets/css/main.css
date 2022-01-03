@@ -3067,7 +3067,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 .how_to_play .box_overlay .character2 {
   transform: translate(-50%, -41%) skew(7deg);
   filter: hue-rotate(348deg) contrast(1.1);
-  width: 78%;
+  width: 90%;
   z-index: 10;
 }
 .how_to_play .box_overlay .background {
@@ -3226,6 +3226,30 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   object-position: center;
 }
 
+.content-race .tab-pane:first-child .box-img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: unset;
+}
+.content-race .tab-pane:first-child .box-img img {
+  object-fit: cover;
+}
+
+.content-fight .tab-pane:first-child .box-img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: unset;
+}
+.content-fight .tab-pane:first-child .box-img img {
+  object-fit: cover;
+}
+
 .how_to_play .content-city-view.is-active {
   z-index: 100;
 }
@@ -3236,6 +3260,10 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 
 .how_to_play .content-race.is-active {
+  z-index: 100;
+}
+
+.how_to_play .content-fight.is-active {
   z-index: 100;
 }
 
@@ -3365,7 +3393,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 
   .how_to_play .box_overlay .character2 {
-    transform: translate(-50%, -41%) skew(0deg);
+    transform: translate(-50%, -35%) skew(0deg);
     filter: hue-rotate(348deg) contrast(1.1);
     width: 100%;
     z-index: 10;
@@ -4101,6 +4129,11 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   opacity: 1;
 }
 
+@media screen and (max-width: 1400px) {
+  .story .slick-slider .slick-slide .boxed-content .title-item-big {
+    font-size: 60px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .story .slick-slider .slick-slide .boxed-content {
     position: relative;
@@ -4120,10 +4153,6 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
   .story .slick-slider .slick-slide:not(:first-child) .boxed-content .story-part {
     order: 2;
-  }
-
-  .story .slick-slider .slick-slide .boxed-content .title-item-big {
-    font-size: 65px;
   }
 
   .story .slick-slider .slick-slide .boxed-content .story-part {
@@ -6268,7 +6297,7 @@ video[name=media] {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
-  padding: 15px;
+  padding: 8px 15px;
   transition: all 0.25s ease;
 }
 .download .download-now span {

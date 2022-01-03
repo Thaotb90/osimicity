@@ -226,6 +226,12 @@ $(document).ready(function() {
             $(".how_to_play .btn--close").addClass("is-active");
             $(".grid-boxed").addClass('not-show');
         })
+        $(".control-fight").click(function(){
+            $(".content_item_show").removeClass("is-active");
+            $(".content-fight").addClass("is-active");
+            $(".how_to_play .btn--close").addClass("is-active");
+            $(".grid-boxed").addClass('not-show');
+        })
     })
 
     $('.library-character .slider').slick({
