@@ -120,14 +120,28 @@
             
             .slick-slide{
                 margin-right: 2px;
-                border: 2px solid gray;
                 cursor: pointer;
                 transition: 0.25s ease;
                 overflow: hidden;
-                img{
+                position: relative;
+                .frame-thumb{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                }
+                .img-character{
                     width: 100%;
                     height: 133px;
                     object-fit: cover;
+                    position: relative;
+                    z-index: 1;
+                }
+                .bg-layer-last{
+                    position: absolute;
+                    z-index: -1;
                 }
             }
             .slick-slide:hover{
@@ -135,8 +149,14 @@
                 border-color: $primary-color;
             }
             .slick-slide.slick-current{
-                filter: hue-rotate(
-                    -190deg);
+                .frame-thumb{
+                    filter: hue-rotate(
+                        286deg);
+                }
+                .img-character{
+                   filter: drop-shadow(0 0 3px white); 
+                }
+                
             }
            }
         }

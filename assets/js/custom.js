@@ -213,15 +213,18 @@ $(document).ready(function() {
             $(".content_item_show").removeClass("is-active");
             $(".content-city-view").addClass("is-active");
             $(".how_to_play .btn--close").addClass("is-active");
+            $(".grid-boxed").addClass('not-show');
         })
         $(".how_to_play .btn--close").click(function(){
             $((".content_item_show")).removeClass("is-active");
             $(this).removeClass("is-active");
+            $(".grid-boxed").removeClass('not-show');
         })
         $(".control-race").click(function(){
             $(".content_item_show").removeClass("is-active");
             $(".content-race").addClass("is-active");
             $(".how_to_play .btn--close").addClass("is-active");
+            $(".grid-boxed").addClass('not-show');
         })
     })
 
