@@ -470,14 +470,14 @@ body .bg-global {
 .title--glitch:before {
   left: 0;
   left: 2px;
-  text-shadow: -2px 0 #ff00c1;
+  text-shadow: -2px 0 rgb(0, 247, 255);
   clip: rect(44px, 450px, 56px, 0);
   animation: glitch-anim 5s linear infinite alternate-reverse;
 }
 .title--glitch:after {
   left: 0;
   left: -2px;
-  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+  text-shadow: -2px 0 rgb(0, 247, 255), 2px 2px #ff00c1;
   animation: glitch-anim2 1s linear infinite alternate-reverse;
 }
 // srink 

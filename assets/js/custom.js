@@ -142,11 +142,18 @@ $('.team-slider').slick({
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 2,
     prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/images/character/prev.png'>",
     nextArrow:"<img class='a-right control-c next slick-next' src='./assets/images/character/next.png'>",
     responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
         {
           breakpoint: 991,
           settings: {

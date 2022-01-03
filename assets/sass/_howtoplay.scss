@@ -134,11 +134,11 @@ a.btn--close:hover, a.btn--close:hover::before {
         content: "";
         position: absolute;
         top: 0;
-        left: -2px;
-        width: 4px;
+        left: -1px;
+        width: 5px;
         height: 100%;
         background: radial-gradient(at 50% 50% , #ffffff, transparent 76%);
-        background-size: 4px 100%;
+        background-size: 5px 100%;
         background-repeat: no-repeat;
         z-index: 100;
     }
@@ -194,7 +194,7 @@ a.btn--close:hover, a.btn--close:hover::before {
         font-size: 65px;
         font-family: 'AquireBold';
         color: $primary-color;
-        text-shadow: 2px 2px 1px white;
+        text-shadow: 2px 2px 1px rgb(0, 247, 255);
         margin-bottom: 30px;
         line-height: 1;
     }

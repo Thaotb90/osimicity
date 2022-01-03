@@ -6,7 +6,7 @@
       background: #000000;
       padding: 30px 0;
       box-shadow: 0 0 30px -10px $primary-color;
-      margin: 30px;
+      margin: 15px;
 
       .boxed-img {
         width: 200px;
@@ -48,11 +48,11 @@
   }
 }
 .teams img.a-left.control-c.prev.slick-prev.slick-arrow {
-  left: 30px;
+  left: 15px;
   border-radius: 0 10px 10px 0;
 }
 .teams .team-slider img.a-right.control-c.next.slick-next.slick-arrow {
-  right: 30px;
+  right: 15px;
   border-radius: 10px 0 0 10px;
 }
 .teams .team:hover .boxed-img {
