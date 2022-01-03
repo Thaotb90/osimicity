@@ -3209,6 +3209,10 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 .how_to_play .content_item_show .tab-content .box-img {
   display: inline-block;
   height: 100%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .how_to_play .content_item_show .tab-content .box-img img {
   object-fit: contain;

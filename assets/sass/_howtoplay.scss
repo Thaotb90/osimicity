@@ -326,6 +326,10 @@ a.btn--close:hover, a.btn--close:hover::before {
         .box-img{
             display: inline-block;
             height: 100%;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             img{
                 object-fit: contain;
                 object-position: top;
