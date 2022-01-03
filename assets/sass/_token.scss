@@ -1,10 +1,9 @@
-.token#token{
+.token#token {
   position: relative;
   z-index: 1;
   padding-top: 60px;
 }
 .token {
-
   .container {
     position: relative;
     z-index: 3;
@@ -47,7 +46,11 @@
     font-weight: normal;
     text-align: center;
     border-image-slice: 1;
-    border-image-source: -webkit-linear-gradient(top, rgb(239 255 0), rgb(255, 145, 0));
+    border-image-source: -webkit-linear-gradient(
+      top,
+      rgba(239, 255, 0, 1),
+      rgba(255, 145, 0, 1)
+    );
     border-width: 2px;
     border-style: solid;
     background: black;
@@ -72,7 +75,6 @@
   }
   .token-info-content tfoot tr {
     background: #1d1d1e;
-    
   }
   .table-metric tfoot tr th:not(last-child) {
     text-align: center;
@@ -90,10 +92,11 @@
   border-radius: 25px;
   box-shadow: 0 0 72px -15px $primary-color;
 }
-#token .boxed-img{
+#token .boxed-img {
   position: relative;
 }
-.animation-chart-left, .animation-chart-right {
+.animation-chart-left,
+.animation-chart-right {
   position: absolute;
   top: 0;
   left: 0;
@@ -109,27 +112,28 @@
 .animation-chart-right {
   background-image: url(../images/token/chart-right.png);
 }
-.chart-box:hover .animation-chart-left, .chart-box:hover .animation-chart-right{
+.chart-box:hover .animation-chart-left,
+.chart-box:hover .animation-chart-right {
   display: block;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: glitch-anim-2;
-    animation-name: glitch-anim-2;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: glitch-anim-2;
+  animation-name: glitch-anim-2;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 @media screen and (max-width: 991px) {
-  .token#token{
+  .token#token {
     background-repeat: inherit;
     background-position: center;
     background-size: inherit;
     padding-top: 40px;
   }
-  .token{
+  .token {
     .col-lg-6:first-child {
       margin-bottom: 50px;
     }
