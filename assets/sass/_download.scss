@@ -58,7 +58,7 @@
     }
     .download-now:hover {
         .icon-download{
-            filter: drop-shadow(0 3px 0px #FF6600);
+            filter: drop-shadow(0 2px 0px #FF6600);
         }
     }
     .download-now:before{
@@ -155,6 +155,9 @@
         font-weight: 600;
         margin: 0;
     }
+    .download .download-now {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 374.98px) {
@@ -167,7 +170,7 @@
     }
     .download .text-large {
         font-size: 30px;
-        padding: 0px 5px;
+        padding: 15px 5px;
         margin-bottom: 0;
     }
     .download .text-small {
