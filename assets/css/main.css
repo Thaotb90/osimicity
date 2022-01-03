@@ -1740,7 +1740,7 @@ li.active .menu-link {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 0 15px;
+  padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
@@ -1757,6 +1757,7 @@ li.active .menu-link {
   height: 100%;
   line-height: 36px;
   text-align: center;
+  background-color: black;
 }
 .select-lang .menu-lang li a:hover {
   color: #E5650E;
@@ -2137,6 +2138,7 @@ li.active .menu-link {
   text-align: center;
   max-width: 560px;
   margin-left: 30px;
+  background-image: radial-gradient(black 0%, transparent 65%);
 }
 .intro-videos .section-heading .title--h3 {
   text-align: center;

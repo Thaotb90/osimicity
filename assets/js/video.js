@@ -6,7 +6,7 @@ $(document).ready(function(){
         isMobile = true;
     }
     if(!isMobile){
-        var videoFile = './assets/videos/video_background.mp4';
+        var videoFile = './assets/videos/video-intro-osimicity.mp4';
         $('video#myVideo source').attr('src', videoFile);
         $("video#myVideo")[0].load();
     }
