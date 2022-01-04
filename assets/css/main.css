@@ -4173,7 +4173,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   z-index: 10;
 }
 .story .slick-slider .slick-slide .boxed-content .title-item-big {
-  font-size: 70px;
+  font-size: 55px;
   color: #E5650E;
 }
 .story .slick-slider .slick-slide .boxed-content .title-item-big p {
@@ -6451,7 +6451,7 @@ video[name=media] {
   margin: 40px 0;
 }
 .download .text-large {
-  font-size: 60px;
+  font-size: 50px;
   color: black;
   line-height: 1.1;
   background: #00f7ff;
