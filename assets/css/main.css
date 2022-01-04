@@ -3876,7 +3876,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(2px 2px 10px gold);
+  filter: drop-shadow(1px 1px 3px gold);
 }
 .library-character .container-fluid .slider-main .slick-slide .boxed-img:after {
   content: "";
