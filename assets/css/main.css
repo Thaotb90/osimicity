@@ -3094,6 +3094,15 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   width: 90%;
   z-index: 10;
 }
+.how_to_play .box_overlay .character3 {
+  position: absolute;
+  width: 130%;
+  height: 103%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(7deg);
+  object-fit: fill;
+}
 .how_to_play .box_overlay .background {
   transform: skew(7deg);
   position: absolute;
@@ -3102,7 +3111,6 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   z-index: 9;
   object-fit: cover;
   left: -105px;
-  filter: brightness(0.5);
 }
 .how_to_play .content {
   position: absolute;
