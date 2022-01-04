@@ -2961,10 +2961,10 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   animation-duration: 0.8s;
 }
 .how_to_play a.btn--close {
-  color: white;
+  color: wheat;
   line-height: 0;
   padding: 10px;
-  background: #E5650E;
+  background: #0000006e;
   height: 50px;
   width: 50px;
   position: absolute;
@@ -2976,23 +2976,26 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   justify-content: center;
   align-items: center;
   transition: 0.25s ease;
+  box-shadow: 0 0 5px red;
 }
 .how_to_play a.btn--close ion-icon {
   margin-bottom: 10px;
   font-size: 22px;
+  color: wheat;
 }
 .how_to_play a.btn--close:before {
   content: "";
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: #E5650E;
+  background-color: #0000006e;
   top: 0;
   left: 0;
   transform: rotate(45deg);
   z-index: -1;
   transition: 0.25s ease;
   opacity: 0.7;
+  box-shadow: 0 0 5px red;
 }
 .how_to_play a.btn--close:hover, .how_to_play a.btn--close:hover::before {
   box-shadow: 0 0 10px white;
@@ -3086,6 +3089,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   z-index: 9;
   object-fit: cover;
   left: -105px;
+  filter: brightness(0.5);
 }
 .how_to_play .content {
   position: absolute;
@@ -3094,26 +3098,27 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   height: 100%;
   z-index: 10;
   left: 50%;
-  top: 78%;
+  top: 70%;
   transform: translateX(-40%) skew(7deg);
 }
 .how_to_play .content .title {
   font-size: 65px;
   font-family: "AquireBold";
   color: #E5650E;
-  text-shadow: 2px 2px 1px #00f7ff;
-  margin-bottom: 30px;
+  text-shadow: 2px 2px 1px #000;
+  margin-bottom: 50px;
   line-height: 1;
 }
 .how_to_play .content a.btn-primary {
   font-size: 22px;
-  color: black;
+  color: white;
   text-transform: uppercase;
   padding: 10px 40px;
   border-radius: 0;
   position: relative;
-  background-color: #E5650E;
+  background-color: #00000078;
   border: none;
+  box-shadow: 0 0 10px red !important;
 }
 .how_to_play .content a.btn-primary:after {
   content: "";
@@ -3122,13 +3127,18 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   height: 100%;
   bottom: -4px;
   right: -4px;
-  background-color: white;
+  background-color: transparent;
   z-index: -1;
   transition: 0.25s ease;
+  box-shadow: 1px 1px 2px white;
 }
 .how_to_play .content a.btn-primary:hover:after {
   bottom: 0;
   right: 0;
+}
+.how_to_play .content a.btn-primary:hover {
+  color: #E5650E;
+  background-color: wheat;
 }
 
 .how_to_play .content_item_show {
@@ -3172,6 +3182,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   opacity: 0;
   transform: translateY(100%);
   transition: all 1s ease;
+  filter: drop-shadow(2px 2px 10px gold);
 }
 .how_to_play .content_item_show .nav-tabs .nav-item .nav-link.active {
   background-color: transparent;
@@ -3203,13 +3214,19 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   height: 100%;
 }
 .how_to_play .content_item_show .nav-tabs .nav-item:nth-child(2) {
-  transition-delay: 0.1s;
+  transition-delay: 0.2s;
+  transform: translateY(-40px);
+  filter: drop-shadow(2px 4px 6px purple);
 }
 .how_to_play .content_item_show .nav-tabs .nav-item:nth-child(3) {
-  transition-delay: 0.2s;
+  transition-delay: 0.4s;
+  transform: translateY(-80px);
+  filter: drop-shadow(2px 2px 10px red);
 }
 .how_to_play .content_item_show .nav-tabs .nav-item:nth-child(4) {
-  transition-delay: 0.3s;
+  transition-delay: 0.6s;
+  transform: translateY(-120px);
+  filter: drop-shadow(2px 2px 10px white);
 }
 .how_to_play .content_item_show .tab-content {
   z-index: 9;
@@ -3267,6 +3284,21 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   transform: translateY(0);
 }
 
+.how_to_play .content_item_show.is-active .nav-tabs .nav-item:nth-child(2) {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+.how_to_play .content_item_show.is-active .nav-tabs .nav-item:nth-child(3) {
+  opacity: 1;
+  transform: translateY(-80px);
+}
+
+.how_to_play .content_item_show.is-active .nav-tabs .nav-item:nth-child(4) {
+  opacity: 1;
+  transform: translateY(-120px);
+}
+
 .how_to_play .content-race.is-active {
   z-index: 100;
 }
@@ -3279,6 +3311,11 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   z-index: 101;
 }
 
+@media screen and (max-width: 1680px) {
+  .how_to_play .content_item_show.is-active .nav-tabs .nav-item {
+    transform: translateY(0) !important;
+  }
+}
 @media screen and (max-width: 1440px) {
   .how_to_play .heading-section .title {
     font-size: 60px;
@@ -3645,7 +3682,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 .library-character .bg-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -3818,6 +3855,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.9;
+  filter: hue-rotate(82deg);
 }
 .library-character .container-fluid .slider-main .slick-slide .boxed-img .character-main {
   position: absolute;
@@ -4075,6 +4114,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 .story .slick-slider .slick-slide .boxed-img img {
   object-fit: cover;
+}
+.story .slick-slider .slick-slide .boxed-img img:first-child {
+  filter: brightness(0.5);
 }
 .story .slick-slider .slick-slide .boxed-img .character {
   position: absolute;
@@ -5309,7 +5351,6 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 .character {
-  background-image: url(../images/vulcar-hachura-r-gta-5-4k-c3.jpg);
   background-attachment: fixed;
 }
 .character .character-active {
@@ -6378,7 +6419,7 @@ video[name=media] {
 .download .bg-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
