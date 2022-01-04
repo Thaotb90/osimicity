@@ -3830,7 +3830,7 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   border-color: #E5650E;
 }
 .library-character .container-fluid .slider-nav-thumbnails .slick-list .slick-track .slick-slide.slick-current .frame-thumb {
-  filter: hue-rotate(214deg);
+  filter: hue-rotate(337deg);
 }
 .library-character .container-fluid .slider-nav-thumbnails .slick-list .slick-track .slick-slide.slick-current .img-character {
   filter: drop-shadow(0 0 3px white);
@@ -6360,9 +6360,6 @@ footer .menu-socials .tele-hover:after {
 }
 .modal-video-trailer .modal-content {
   display: contents !important;
-}
-.modal-video-trailer .modal-content .modal-body {
-  background-color: #3e3e3e;
 }
 .modal-video-trailer .modal-content .modal-body .close {
   position: absolute;
