@@ -3720,18 +3720,18 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 .library-character .container-fluid .slider-nav-thumbnails .wrapper-icon {
   position: absolute;
   width: 25px !important;
-  height: 100% !important;
+  height: 50% !important;
   background-color: transparent;
   border: 1px solid gray;
-  top: 0;
+  top: 50%;
   display: flex !important;
   align-items: center;
   justify-content: center;
   border: none;
-  background-color: transparent;
   box-shadow: 0 0 10px wheat;
   transition: 0.25s ease;
   cursor: pointer;
+  transform: translateY(-50%);
 }
 .library-character .container-fluid .slider-nav-thumbnails .wrapper-icon img {
   width: 100%;
@@ -3743,11 +3743,11 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 .library-character .container-fluid .slider-nav-thumbnails .icon-left {
   left: -5px;
-  border-radius: 10rem 0 0 10rem;
+  border-radius: 5px 0 0 5px;
 }
 .library-character .container-fluid .slider-nav-thumbnails .icon-right {
   right: -5px;
-  border-radius: 0 10rem 10rem 0;
+  border-radius: 0 5px 5px 0;
 }
 .library-character .container-fluid .slider-nav-thumbnails .slick-list .slick-track .slick-slide {
   margin-right: 2px;
@@ -4185,9 +4185,26 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   .story .slick-slider .slick-slide .boxed-content .title-item-big {
     font-size: 60px;
+  }
+
+  .story .slick-slider .slick-slide .boxed-img .character4 {
+    transform: translateX(-25%);
+  }
+}
+@media screen and (max-width: 1279.98px) {
+  .story .slick-slider .slick-slide .boxed-img .character {
+    transform: translateX(-10%);
+  }
+
+  .story .slick-slider .slick-slide .boxed-img .character3 {
+    transform: translateX(0%);
+  }
+
+  .story .slick-slider .slick-slide .boxed-img .character4 {
+    transform: translateX(-40%);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -4198,8 +4215,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    justify-content: end;
+    align-items: flex-end;
     gap: 120px;
     height: 800px;
   }
@@ -4212,7 +4229,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 
   .story .slick-slider .slick-slide .boxed-content .story-part {
-    font-size: 18px;
+    font-size: 16px;
+    max-width: 350px;
   }
 
   .story .slick-slider .slick-dots li button {
@@ -4234,6 +4252,10 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .story .slick-slider .slick-slide .boxed-content .story-part {
+    max-width: unset;
+  }
+
   .story .slick-slider .slick-slide .boxed-content .title-item-big {
     font-size: 45px;
   }
@@ -4241,7 +4263,19 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   .story .slick-slider .slick-slide .boxed-content {
     gap: 30px;
     margin-bottom: 0;
-    height: auto;
+    height: 100%;
+    bottom: 48px;
+    position: absolute;
+    justify-content: space-between;
+  }
+
+  .story .slick-slider .slick-slide:not(:first-child) .boxed-content {
+    justify-content: end;
+  }
+
+  .story .slick-slider .slick-slide .boxed-img .character3 {
+    transform: translateX(-50%);
+    left: 50%;
   }
 }
 @media screen and (max-width: 580px) {
@@ -4257,6 +4291,13 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 
   .story .slick-slider .slick-slide .boxed-content .title-item-big {
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .story .slick-slider .slick-slide .boxed-img .character {
+    transform: translateX(-20%);
+    height: 50%;
+    top: 0;
   }
 }
 .features {
@@ -6434,6 +6475,10 @@ video[name=media] {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .download {
+    padding: 60px 0;
+  }
+
   .download .table-system-req {
     padding: 40px 15px;
   }
@@ -6529,6 +6574,10 @@ video[name=media] {
   .partner .bg-second-large {
     padding: 0 15px;
   }
+
+  .partner {
+    padding-bottom: 60px;
+  }
 }
 @media screen and (max-width: 580px) {
   .partner .section-heading .section-title {
@@ -6539,8 +6588,16 @@ video[name=media] {
   .partner .section-heading .section-title {
     font-size: 25px;
   }
+
+  .partner .list-partner {
+    row-gap: 20px;
+  }
+
+  .partner .list-partner .partner-logo {
+    width: 80%;
+  }
 }
-@media screen and (max-width: 374.98px) {
+@media screen and (max-width: 375px) {
   .partner .section-heading .section-title {
     font-size: 20px;
   }

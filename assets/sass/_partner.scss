@@ -27,6 +27,9 @@
     .partner .bg-second-large {
         padding: 0 15px;
     }
+    .partner {
+        padding-bottom: 60px;
+    }
 }
 @media screen and (max-width: 580px) {
     .partner .section-heading .section-title {
@@ -37,9 +40,16 @@
     .partner .section-heading .section-title {
         font-size: 25px;
     }
+    .partner .list-partner {
+        row-gap: 20px;
+    }
+    .partner .list-partner .partner-logo {
+        width: 80%;
+    }
+    
 }
 
-@media screen and (max-width: 374.98px) {
+@media screen and (max-width: 375px) {
     .partner .section-heading .section-title {
         font-size: 20px;
     }

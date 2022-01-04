@@ -85,18 +85,18 @@
             .wrapper-icon{
                 position: absolute;
                 width: 25px !important;
-                height: 100% !important;
+                height: 50% !important;
                 background-color: transparent;
                 border: 1px solid gray;
-                top: 0;
+                top: 50%;
                 display: flex !important;
                 align-items: center;
                 justify-content: center;
                 border: none;
-                background-color: transparent;
                 box-shadow: 0 0 10px wheat;
                 transition: 0.25s ease;
                 cursor: pointer;
+                transform: translateY(-50%);
                 img{
                     
                     width: 100%;
@@ -109,11 +109,11 @@
             }
             .icon-left{
                 left: -5px;
-                border-radius: 10rem 0 0 10rem;
+                border-radius: 5px 0 0 5px;
             }
             .icon-right{
                 right: -5px;
-                border-radius: 0 10rem 10rem 0;
+                border-radius: 0 5px 5px 0;
             }
             
             .slick-list{

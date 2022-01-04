@@ -173,11 +173,26 @@
   z-index: -1;
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   .story .slick-slider .slick-slide .boxed-content .title-item-big {
     font-size: 60px;
   }
+  .story .slick-slider .slick-slide .boxed-img .character4 {
+    transform: translateX(-25%);
 }
+}
+@media screen and (max-width: 1279.98px) {
+  .story .slick-slider .slick-slide .boxed-img .character {
+    transform: translateX(-10%);
+}
+.story .slick-slider .slick-slide .boxed-img .character3 {
+  transform: translateX(0%);
+}
+.story .slick-slider .slick-slide .boxed-img .character4 {
+  transform: translateX(-40%);
+}
+}
+
 @media screen and (max-width: 1024px) {
   .story .slick-slider .slick-slide .boxed-content {
     position: relative;
@@ -186,8 +201,8 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    justify-content: end;
+    align-items: flex-end;
     gap: 120px;
     height: 800px;
   }
@@ -200,7 +215,8 @@
     }
   }
   .story .slick-slider .slick-slide .boxed-content .story-part {
-    font-size: 18px;
+    font-size: 16px;
+    max-width: 350px;
   }
   .story .slick-slider .slick-dots li button {
     font-size: 0;
@@ -219,14 +235,31 @@
   }
 }
 @media screen and (max-width: 767.98px) {
+  .story .slick-slider .slick-slide .boxed-content .story-part {
+    max-width: unset;
+}
   .story .slick-slider .slick-slide .boxed-content .title-item-big {
     font-size: 45px;
   }
   .story .slick-slider .slick-slide .boxed-content {
     gap: 30px;
     margin-bottom: 0;
-    height: auto;
+    height: 100%;
+    bottom: 48px;
+    position: absolute;
+    justify-content: space-between;
   }
+  .story .slick-slider .slick-slide:not(:first-child) {
+      .boxed-content{
+
+      justify-content: end;
+    }
+  }
+
+.story .slick-slider .slick-slide .boxed-img .character3 {
+  transform: translateX(-50%);
+  left: 50%;
+}
 }
 @media screen and (max-width: 580px) {
   .story .slick-slider .slick-slide .boxed-content .story-part {
@@ -242,3 +275,11 @@
     font-size: 30px;
   }
 }
+@media screen and (max-width: 420px) {
+  .story .slick-slider .slick-slide .boxed-img .character {
+    transform: translateX(-20%);
+    height: 50%;
+    top: 0;
+}
+}
+
