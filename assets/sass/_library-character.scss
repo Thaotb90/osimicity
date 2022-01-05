@@ -73,7 +73,7 @@
                 margin-top: 10px;
                 font-size: 20px;
                 color: white;
-                padding: 0 25px;
+                padding: 0 15px;
             }
         }
         .slider-nav-thumbnails{
@@ -167,15 +167,15 @@
             .slick-slide{
                 display: flex;
                 flex-direction: row;
-                justify-content: start;
+                justify-content: center;
                 align-items: center;
-                gap: 0;
+                gap: 65px;
+                padding: 40px 0;
                 .boxed-img{
                     display: inline-flex;
-                    margin: 40px auto;
+                    margin-left:unset;
                     justify-content: center;
                     align-items: center;
-                    // padding: 10px;
                     position: relative;
                     height: 500px;
                     width: 350px;
@@ -414,4 +414,10 @@
 .library-character .container-fluid .heading-section .desc {
     font-size: 16px;
 }
+}
+@media screen and (max-width: 420px) {
+    .library-character .container-fluid .slider-main .slick-slide .boxed-img {
+        height: 440px;
+        width: 300px;
+    }
 }
