@@ -3089,9 +3089,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   z-index: 10;
 }
 .how_to_play .box_overlay .character2 {
-  transform: translate(-50%, -41%) skew(7deg);
+  transform: translate(-50%, -30%) skew(7deg);
   filter: hue-rotate(348deg) contrast(1.1);
-  width: 90%;
+  width: 100%;
   z-index: 10;
 }
 .how_to_play .box_overlay .character3 {
