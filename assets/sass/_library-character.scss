@@ -188,6 +188,15 @@
                         z-index: 100;
                         filter: drop-shadow(0px 0px 12px wheat);
                     }
+                    .character-animation {
+                        position: absolute;
+                        width: 93%;
+                        height: 97%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        object-fit: fill;
+                    }
                     .layer-bg{
                         position: absolute;
                         width: 100%;
