@@ -163,16 +163,17 @@ a.btn--close:hover, a.btn--close:hover::before {
         object-fit: contain;
     }
     .character1 {
-        transform: translate(-30%, -42%) skew(7deg);
-        width: 100%;
-        z-index: 10;
+        transform: translate(-44%, -42%) skew(
+            7deg) rotate(
+            7deg);
+                width: 135%;
+                z-index: 10;
     }
-    .character2{
-        transform: translate(-50%, -30%) skew(7deg);
-        filter: hue-rotate(
-            348deg) contrast(1.1);
-        width:100%;
-        z-index: 10;
+    .character2 {
+        transform: translate(-32%, -43%) skew(
+            7deg);
+                width: 105%;
+                z-index: 10;
     }
     .character3{
         position: absolute;
@@ -202,14 +203,14 @@ a.btn--close:hover, a.btn--close:hover::before {
     height: 100%;
     z-index: 10;
     left: 50%;
-    top: 70%;
+    top: 73%;
     transform: translateX(-40%) skew(7deg);
     .title{
         font-size: 65px;
         font-family: 'AquireBold';
         color: $primary-color;
         text-shadow: 2px 2px 1px #000;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
         line-height: 1;
     }
     a.btn-primary{
@@ -285,11 +286,10 @@ a.btn--close:hover, a.btn--close:hover::before {
             opacity: 0;
             transform: translateY(100%);
             transition: all 1s ease;
-            filter: drop-shadow(2px 2px 10px gold);
             .nav-link.active{
                 background-color: transparent;
                 border: none;
-
+                transform: scale(1.05);
                 .bg-tab{
                     img{
                         filter: hue-rotate(0);
@@ -298,7 +298,7 @@ a.btn--close:hover, a.btn--close:hover::before {
             }
             .nav-link{
                 border: none;
-               
+                transition: all 0.25s ease;
             }
             .bg-tab{
                 img{
@@ -326,18 +326,12 @@ a.btn--close:hover, a.btn--close:hover::before {
         }
         .nav-item:nth-child(2) {
             transition-delay:0.2s;
-            transform: translateY(-40px);
-    filter: drop-shadow(2px 4px 6px purple);
         }
         .nav-item:nth-child(3) {
             transition-delay:0.4s;
-            transform: translateY(-80px);
-            filter: drop-shadow(2px 2px 10px red);
         }
         .nav-item:nth-child(4) {
             transition-delay:0.6s;
-            transform: translateY(-120px);
-            filter: drop-shadow(2px 2px 10px white);
         }
     }
     .tab-content{
@@ -353,6 +347,7 @@ a.btn--close:hover, a.btn--close:hover::before {
         .box-img{
             display: inline-block;
             height: 100%;
+            width: 100%;
             position: relative;
             left: 50%;
             top: 50%;
@@ -360,6 +355,14 @@ a.btn--close:hover, a.btn--close:hover::before {
             img{
                 object-fit: contain;
                 object-position: center;
+            }
+            .character-cusstom-css{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-26%, -58%);
             }
         }
        
@@ -402,15 +405,12 @@ z-index: 100;
 }
 .how_to_play .content_item_show.is-active .nav-tabs .nav-item:nth-child(2){
     opacity: 1;
-        transform: translateY(-40px);
 }
 .how_to_play .content_item_show.is-active .nav-tabs .nav-item:nth-child(3){
     opacity: 1;
-        transform: translateY(-80px);
 }
 .how_to_play .content_item_show.is-active .nav-tabs .nav-item:nth-child(4){
     opacity: 1;
-        transform: translateY(-120px);
 }
 .how_to_play .content-race.is-active{
 z-index: 100;
@@ -438,11 +438,11 @@ z-index: 100;
        padding: 0 5px;
     }
     .how_to_play .box_overlay .character1 {
-        transform: translate(-63%, -45%);
-        width: 100%;
+        transform: translate(-30%, -45%);
+        width: 115%;
     }
     .how_to_play .box_overlay .character2 {
-        width: 90%;
+        width: 115%;
     }
     .how_to_play .content_item_show .nav-tabs {
         grid-template-columns: unset;
@@ -503,9 +503,10 @@ z-index: 100;
         
     }
     .how_to_play .box_overlay .character1 {
-        transform: translate(-55%, -43%) skew(0deg);
+        transform: translate(-45%, -43%) skew(0deg);
         width: 100%;
     }
+
     .how_to_play .box_overlay .character2 {
         width: 100%;
     }
@@ -531,12 +532,17 @@ z-index: 100;
         object-fit: cover;
         left: unset;
     }
+    .how_to_play .box_overlay .background-race {
+        object-fit: contain;
+    }
     .how_to_play .box_overlay .character2 {
-        transform: translate(-50%, -35%) skew(0deg);
+        transform: translate(-50%, -42%) skew(
+    0deg);
         filter: hue-rotate(
     348deg) contrast(1.1);
-        width: 100%;
+        width: 39%;
         z-index: 10;
+        object-fit: cover;
     }
     .how_to_play .grid-boxed .grid-item {
         transform: skew(
@@ -651,23 +657,44 @@ z-index: 100;
         padding: 8px 15px;
     }
     .how_to_play .box_overlay .character1 {
-        transform: translate(-100%, -35%) skew(0deg);
-        width: 60%;
-        object-fit: cover;
+        transform: translate(-40%, -50%) skew(
+    0deg);
+        width: 100%;
+        object-fit: contain;
         object-position: top;
         height: 100%;
         min-height: 500px;
     }
+    .how_to_play .box_overlay .background-race {
+        object-fit: contain;
+        transform: translate(-65%, -50%);
+        left: 50%;
+        top: 50%;
+    }
     .how_to_play .box_overlay .character2 {
         object-fit: cover;
-        object-position: 100% 14%;
-        width: 70%;
+        width: 50%;
+        height: 100%;
+        transform: translate(-50%, -50%);
     }
     .background-race {
         object-position: 100% 37%;
     }
     .how_to_play .content_item_show .nav-tabs .nav-item .content-tab {
         padding: 20px 20px;
+    }
+    .how_to_play .content_item_show .tab-content .box-img .character-cusstom-css {
+        position: absolute;
+        width: 100%;
+        height: 75%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-36%, -58%);
+    }
+    .how_to_play .content_item_show .tab-content .box-img img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
     }
 }
 @media screen and (max-width: 580px) {
@@ -719,9 +746,6 @@ z-index: 100;
     .how_to_play .grid-boxed.not-show {
         height: 80vh;
     }
-}
-.how_to_play .content_item_show .tab-content .box-img img {
-    animation: animation-rotage 1s infinite alternate;;
 }
 
 @keyframes animation-rotage {
