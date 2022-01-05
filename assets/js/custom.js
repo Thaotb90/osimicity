@@ -238,7 +238,8 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: false,
+        fade: true,
+        cssEase: 'linear',
         asNavFor: '.slider-nav-thumbnails',
     });
    
