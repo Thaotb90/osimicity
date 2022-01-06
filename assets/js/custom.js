@@ -281,3 +281,11 @@ $(document).ready(function() {
         $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
         $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
    });
+
+   $(document).ready(function(){ 
+    $(".slick-slide.slick-active video")[0].play();
+  });
+  
+  function openCharacter(index){
+    $(".slick-slide video")[index].play();
+  }
